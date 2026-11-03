@@ -39,13 +39,13 @@ export const SocialSubscribeSection: React.FC = () => {
                       Official Facebook Page
                     </h3>
                     <span className="text-xs text-blue-700 font-bold block">
-                      @mzbutterfoods
+                      MZ Butter &amp; Foods
                     </span>
                   </div>
                 </div>
                 <div className="flex items-center gap-1 text-xs text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full font-medium">
                   <Users className="w-3.5 h-3.5 text-blue-600" />
-                  <span>25K+ Followers</span>
+                  <span>Official Page</span>
                 </div>
               </div>
 
@@ -53,7 +53,7 @@ export const SocialSubscribeSection: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden aspect-16/9 bg-blue-50 border border-blue-100">
                 <Image
                   src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80"
-                  alt="Mz Butter & foods Facebook community"
+                  alt="MZ Butter & Foods Facebook community"
                   fill
                   className="object-cover"
                   unoptimized
@@ -114,13 +114,13 @@ export const SocialSubscribeSection: React.FC = () => {
                       Official Instagram Feed
                     </h3>
                     <span className="text-xs text-pink-700 font-bold block">
-                      @mzbutterfoods
+                      @mz_foods01
                     </span>
                   </div>
                 </div>
                 <div className="flex items-center gap-1 text-xs text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full font-medium">
                   <Users className="w-3.5 h-3.5 text-pink-600" />
-                  <span>42K+ Foodies</span>
+                  <span>@mz_foods01</span>
                 </div>
               </div>
 

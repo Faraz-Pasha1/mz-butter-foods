@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
 
 :root {
   --background: #FFFDF8;
@@ -65,3 +65,24 @@ h1, h2, h3, h4, h5, h6, .font-heading, .font-serif {
 .animate-pulse-glow {
   animation: pulseGlow 3s infinite ease-in-out;
 }
+
+/* Continuous Uniform 3D Flip Logo Animation */
+@keyframes logo3dFlip {
+  from {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+.logo-3d-flip {
+  transform-style: preserve-3d;
+  animation: logo3dFlip 6s linear infinite;
+  will-change: transform;
+}
+
+.logo-3d-flip:hover {
+  animation-play-state: paused;
+}
+

@@ -23,40 +23,24 @@ export const KeyCustomersSection: React.FC = () => {
           </p> */}
         </div>
 
-        {/* 20 Cards: 5 Image Cards in One Line (5 columns on desktop) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
+        {/* 20 Cards: Decreased Card Size with sleek multi-column grid */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-2 sm:gap-3 max-w-6xl mx-auto">
           {customers.map((cust) => (
             <div
               key={cust.id}
-              className="group bg-white rounded-2xl border border-amber-100/90 p-1 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-1"
+              className="group bg-white rounded-xl border border-amber-100/80 p-1.5 sm:p-2 shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center hover:-translate-y-0.5"
             >
               {/* Image Card Container */}
-              <div className="relative w-full aspect-square rounded-xl overflow-hidden bg-amber-50 mb-1 border border-amber-50">
+              <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-amber-50/50 flex items-center justify-center">
                 <Image
                   src={cust.image}
                   alt={cust.name}
                   fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
-                  className="object-contain group-hover:scale-110 transition-transform duration-500"
+                  sizes="(max-width: 640px) 30vw, (max-width: 1024px) 16vw, 12vw"
+                  className="object-contain p-1 group-hover:scale-108 transition-transform duration-300"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                {/* <span className="absolute bottom-2 left-2 text-[9px] bg-white/90 backdrop-blur-xs font-bold text-amber-900 px-1.5 py-0.5 rounded-md shadow-2xs">
-                  {cust.since}
-                </span> */}
               </div>
-
-              {/* Title & Metadata */}
-              {/* <h3 className="font-extrabold text-sm text-[#29150B] group-hover:text-amber-700 transition-colors line-clamp-1">
-                {cust.name}
-              </h3> */}
-              {/* <p className="text-xs font-semibold text-amber-800/80 mt-0.5 line-clamp-1">
-                {cust.category}
-              </p> */}
-              {/* <div className="mt-2 flex items-center justify-center gap-1 text-[10px] text-gray-400">
-                <MapPin className="w-2.5 h-2.5 text-amber-600 shrink-0" />
-                <span className="truncate">{cust.location}</span>
-              </div> */}
             </div>
           ))}
         </div>

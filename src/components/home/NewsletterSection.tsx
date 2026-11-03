@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Mail, CheckCircle2, Send, Sparkles } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 export const NewsletterSection: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -14,12 +15,19 @@ export const NewsletterSection: React.FC = () => {
 
     setIsLoading(true);
 
-    // Simulate reliable submission / sheet integration
+    const subject = encodeURIComponent("New Community Subscription - " + email);
+    const body = encodeURIComponent(
+      `Hello MZ Butter & Foods,\n\nPlease add my email to your community list for fresh dairy updates, batches, and discounts:\n\nEmail: ${email}\n\nThank you!`
+    );
+
+    // Open mail client addressed directly to mzbutterfoods.info@gmail.com
+    window.open(`mailto:${siteConfig.email}?subject=${subject}&body=${body}`, "_blank");
+
     setTimeout(() => {
       setIsLoading(false);
       setIsSubmitted(true);
       setEmail("");
-    }, 600);
+    }, 400);
   };
 
   return (
@@ -34,26 +42,26 @@ export const NewsletterSection: React.FC = () => {
           <span>Exclusive VIP Dairy Updates</span>
         </div>
 
-        {/* a. Heading in middle of the screen */}
+        {/* Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight max-w-2xl mx-auto">
           Join our community with subscribe for update
         </h2>
 
         <p className="text-sm sm:text-base text-amber-100/80 mt-3 max-w-xl mx-auto leading-relaxed">
-          Be the first to hear about fresh seasonal churn batches, special holiday discounts, and secret culinary dessert recipes.
+          Be the first to hear about fresh seasonal churn batches, special discounts, and secret culinary dessert recipes.
         </p>
 
         {/* Email Subscribe Section */}
         <div className="mt-8 max-w-lg mx-auto">
           {isSubmitted ? (
-            <div className="p-4 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 flex items-center justify-center gap-3 animate-fade-in">
+            <div className="p-5 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 flex items-center justify-center gap-3 animate-fade-in">
               <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
               <div className="text-left">
                 <h4 className="text-sm font-bold text-white">
-                  Welcome to Mz Butter Community!
+                  Welcome to MZ Butter &amp; Foods Community!
                 </h4>
                 <p className="text-xs text-emerald-200/90 mt-0.5">
-                  Your email has been recorded. Check your inbox for your welcome opening deal!
+                  Your subscription details have been dispatched to <strong>{siteConfig.email}</strong>. Check your inbox for updates!
                 </p>
               </div>
             </div>
@@ -88,8 +96,15 @@ export const NewsletterSection: React.FC = () => {
             </form>
           )}
 
-          <p className="text-[11px] text-amber-200/50 mt-3">
-            We value your privacy. No spam, only pure dairy updates. Unsubscribe anytime.
+          <p className="text-[11px] text-amber-200/60 mt-3">
+            Subscription details are sent directly to{" "}
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="text-amber-300 font-bold hover:underline"
+            >
+              {siteConfig.email}
+            </a>
+            . No spam, only pure dairy updates.
           </p>
         </div>
       </div>

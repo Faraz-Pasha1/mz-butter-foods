@@ -131,9 +131,6 @@ export const Footer: React.FC = () => {
                     <Link href="/about" className="hover:text-amber-400 transition-colors">
                       • Our Heritage
                     </Link>
-                    <Link href="/blog" className="hover:text-amber-400 transition-colors">
-                      • Dairy Blog
-                    </Link>
                   </div>
                 </li>
               </ul>
@@ -148,11 +145,12 @@ export const Footer: React.FC = () => {
               {/* Social links */}
               <div className="flex items-center gap-3">
                 <a
-                  href={`https://wa.me/${siteConfig.whatsappNumber}`}
+                  href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello MZ Butter & Foods! I would like to place an order or inquire about your products.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-all border border-emerald-500/30"
-                  aria-label="WhatsApp"
+                  aria-label="Chat with MZ Butter & Foods on WhatsApp"
+                  title="Chat with MZ Butter & Foods on WhatsApp"
                 >
                   <MessageCircle className="w-4 h-4" />
                 </a>

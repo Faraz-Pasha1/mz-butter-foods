@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "Danedar Desi Ghee",
     "Bilona Cow Ghee",
     "Chocolate Butter Spread",
-    "Mz Butter",
+    "MZ Butter",
     "Cold Chain Dairy Delivery",
-    "Lahore Fresh Dairy",
+    "Karachi Fresh Dairy",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {

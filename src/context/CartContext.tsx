@@ -149,7 +149,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     let message = `*NEW ORDER - ${siteConfig.name.toUpperCase()}*\n`;
     message += `-----------------------------------------\n`;
-    message += `Hello Mz Butter & Foods! I would like to place an order from your website:\n\n`;
+    message += `Hello MZ Butter & Foods! I would like to place an order from your website:\n\n`;
 
     if (cart.length === 0) {
       message += `(My cart is currently empty, but I would like to inquire about your fresh dairy products.)\n`;
@@ -164,11 +164,11 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
 
       message += `-----------------------------------------\n`;
-      message += `*Subtotal:* Rs. ${subtotal.toLocaleString()}\n`;
-      message += `*Cold-Chain Delivery:* ${
-        shippingFee === 0 ? "FREE" : `Rs. ${shippingFee.toLocaleString()}`
+      message += `*Total Amount (Subtotal):* Rs. ${subtotal.toLocaleString()}\n`;
+      message += `*Delivery Charges:* ${
+        shippingFee === 0 ? "FREE (Order above Rs. 5000)" : `Rs. ${shippingFee.toLocaleString()} /=`
       }\n`;
-      message += `*TOTAL AMOUNT:* Rs. ${grandTotal.toLocaleString()}\n`;
+      message += `*GRAND TOTAL:* Rs. ${grandTotal.toLocaleString()} /=\n`;
       message += `-----------------------------------------\n\n`;
     }
 

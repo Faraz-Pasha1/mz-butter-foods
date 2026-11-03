@@ -31,7 +31,7 @@ export default function CareersPage() {
     fullName: "",
     email: "",
     phone: "",
-    city: "Lahore",
+    city: "Karachi",
     position: "General Application / Any Department",
     experience: "1 - 2 Years",
     availability: "Immediate (Within 1 week)",
@@ -228,7 +228,7 @@ export default function CareersPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, city: e.target.value })
                       }
-                      placeholder="e.g. Lahore, Kasur, Sheikhupura"
+                      placeholder="e.g. Karachi, Sindh"
                       className="w-full px-4 py-3 rounded-xl border border-amber-200 bg-[#FFFDF9] text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/40 text-gray-900"
                     />
                   </div>

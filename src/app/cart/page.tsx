@@ -35,17 +35,37 @@ export default function CartPage() {
   const [customerName, setCustomerName] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
   const [customerAddress, setCustomerAddress] = useState("");
-  const [customerCity, setCustomerCity] = useState("Lahore");
+  const [customerCity, setCustomerCity] = useState("Karachi");
   const [customerNotes, setCustomerNotes] = useState("");
+  const [formErrors, setFormErrors] = useState<{ name?: string; address?: string }>({});
 
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const errors: { name?: string; address?: string } = {};
+
+    if (!customerName.trim()) {
+      errors.name = "Full Name is required for delivery";
+    }
+    if (!customerAddress.trim()) {
+      errors.address = "Complete Delivery Address is required";
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      const el = document.getElementById("delivery-info-form");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+
+    setFormErrors({});
+
     // Generate prefilled WhatsApp link with customer details
     const link = generateWhatsAppLink({
-      name: customerName,
-      phone: customerPhone,
-      address: customerAddress,
-      city: customerCity,
-      notes: customerNotes,
+      name: customerName.trim(),
+      phone: customerPhone.trim(),
+      address: customerAddress.trim(),
+      city: customerCity.trim(),
+      notes: customerNotes.trim(),
     });
     window.open(link, "_blank");
   };
@@ -69,7 +89,7 @@ export default function CartPage() {
             Your Dairy Basket &amp; Order Review
           </h1>
           <p className="text-sm text-gray-600 mt-2">
-            No login, passwords, or credit card required. Finalize your order details and send directly via WhatsApp!
+            No login or credit card needed. Enter your delivery info and send directly to our WhatsApp!
           </p>
         </div>
 
@@ -105,7 +125,7 @@ export default function CartPage() {
                       </span>
                     ) : (
                       <span>
-                        Add <strong>Rs. {freeShippingLeft.toLocaleString()}</strong> more for FREE Chilled Delivery!
+                        Add <strong>Rs. {freeShippingLeft.toLocaleString()}</strong> more for FREE Delivery! (Free above Rs. 5,000)
                       </span>
                     )}
                   </span>
@@ -161,7 +181,7 @@ export default function CartPage() {
                           Weight: {item.selectedVariant.label}
                         </span>
                         <div className="text-xs text-gray-500 mt-1">
-                          Unit: Rs. {item.selectedVariant.price.toLocaleString()}
+                          Unit Price: Rs. {item.selectedVariant.price.toLocaleString()}
                         </div>
                       </div>
                     </div>
@@ -199,7 +219,7 @@ export default function CartPage() {
                         </span>
                         <button
                           onClick={() => removeFromCart(item.cartItemId)}
-                          className="text-[11px] text-gray-400 hover:text-red-500 flex items-center gap-1 justify-end ml-auto mt-0.5 transition-colors"
+                          className="text-[11px] text-gray-400 hover:text-red-500 flex items-center gap-1 justify-end ml-auto mt-0.5 transition-colors cursor-pointer"
                         >
                           <Trash2 className="w-3 h-3" />
                           <span>Remove</span>
@@ -210,29 +230,45 @@ export default function CartPage() {
                 ))}
               </div>
 
-              {/* Delivery Details Form */}
-              <div className="bg-white rounded-3xl border border-amber-200/80 p-6 shadow-md space-y-4">
-                <div className="flex items-center gap-2 border-b border-amber-100 pb-3">
-                  <span className="w-6 h-6 rounded-full bg-amber-500 text-black font-black text-xs flex items-center justify-center">
-                    📍
-                  </span>
-                  <h3 className="text-base font-extrabold text-[#29150B]">
-                    Delivery Information (Optional for WhatsApp Invoice)
-                  </h3>
+              {/* Delivery Details Form (Required: Name & Address) */}
+              <div
+                id="delivery-info-form"
+                className="bg-white rounded-3xl border border-amber-200/80 p-6 shadow-md space-y-4"
+              >
+                <div className="flex items-center justify-between border-b border-amber-100 pb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-amber-500 text-black font-black text-xs flex items-center justify-center">
+                      📍
+                    </span>
+                    <h3 className="text-base font-extrabold text-[#29150B]">
+                      Delivery Details
+                    </h3>
+                  </div>
+                  <span className="text-xs text-red-600 font-bold">* Name &amp; Delivery Address Required</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-gray-700 mb-1">
-                      Your Full Name
+                      Your Full Name <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"
                       value={customerName}
-                      onChange={(e) => setCustomerName(e.target.value)}
+                      onChange={(e) => {
+                        setCustomerName(e.target.value);
+                        if (formErrors.name) setFormErrors((prev) => ({ ...prev, name: undefined }));
+                      }}
                       placeholder="e.g. Imran Khan"
-                      className="w-full px-4 py-2.5 rounded-xl border border-amber-200 bg-amber-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+                      className={`w-full px-4 py-2.5 rounded-xl border text-sm focus:outline-none focus:ring-2 ${
+                        formErrors.name
+                          ? "border-red-500 bg-red-50/40 focus:ring-red-400"
+                          : "border-amber-200 bg-amber-50/30 focus:ring-amber-500"
+                      }`}
                     />
+                    {formErrors.name && (
+                      <p className="text-xs text-red-600 font-semibold mt-1">{formErrors.name}</p>
+                    )}
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-gray-700 mb-1">
@@ -251,15 +287,25 @@ export default function CartPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div className="sm:col-span-2">
                     <label className="block text-xs font-bold text-gray-700 mb-1">
-                      Complete House / Street Address
+                      Complete Delivery Address <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"
                       value={customerAddress}
-                      onChange={(e) => setCustomerAddress(e.target.value)}
-                      placeholder="House #, Street #, Sector / Colony"
-                      className="w-full px-4 py-2.5 rounded-xl border border-amber-200 bg-amber-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+                      onChange={(e) => {
+                        setCustomerAddress(e.target.value);
+                        if (formErrors.address) setFormErrors((prev) => ({ ...prev, address: undefined }));
+                      }}
+                      placeholder="House #, Street #, Sector / Area"
+                      className={`w-full px-4 py-2.5 rounded-xl border text-sm focus:outline-none focus:ring-2 ${
+                        formErrors.address
+                          ? "border-red-500 bg-red-50/40 focus:ring-red-400"
+                          : "border-amber-200 bg-amber-50/30 focus:ring-amber-500"
+                      }`}
                     />
+                    {formErrors.address && (
+                      <p className="text-xs text-red-600 font-semibold mt-1">{formErrors.address}</p>
+                    )}
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-gray-700 mb-1">
@@ -269,7 +315,7 @@ export default function CartPage() {
                       type="text"
                       value={customerCity}
                       onChange={(e) => setCustomerCity(e.target.value)}
-                      placeholder="Lahore"
+                      placeholder="Karachi"
                       className="w-full px-4 py-2.5 rounded-xl border border-amber-200 bg-amber-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
                     />
                   </div>
@@ -277,64 +323,111 @@ export default function CartPage() {
 
                 <div>
                   <label className="block text-xs font-bold text-gray-700 mb-1">
-                    Special Delivery Notes / Instructions
+                    Special Delivery Instructions (Optional)
                   </label>
                   <input
                     type="text"
                     value={customerNotes}
                     onChange={(e) => setCustomerNotes(e.target.value)}
-                    placeholder="e.g. Ring the bell twice, keep cold, deliver before 10 AM"
+                    placeholder="e.g. Ring bell twice, deliver in evening"
                     className="w-full px-4 py-2.5 rounded-xl border border-amber-200 bg-amber-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Right Side: Order Summary & WhatsApp Link */}
+            {/* Right Side: Detailed Checkout Summary & WhatsApp Link */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="bg-white rounded-3xl border border-amber-200/80 p-6 sm:p-8 shadow-xl sticky top-28 space-y-6">
+              <div className="bg-white rounded-3xl border border-amber-200/80 p-6 sm:p-7 shadow-xl sticky top-28 space-y-5">
                 <div>
                   <h3 className="text-xl font-black text-[#29150B]">
-                    Order Summary
+                    Checkout Summary
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1">
-                    Review your order total and dispatch method
+                  <p className="text-xs text-gray-500 mt-0.5">
+                    Itemized products, delivery fee, and grand total
                   </p>
                 </div>
 
-                {/* Breakdown */}
-                <div className="space-y-3 text-sm divide-y divide-amber-100">
-                  <div className="flex justify-between text-gray-600 pt-1">
-                    <span>Items Subtotal ({totalItems} items)</span>
-                    <span className="font-bold text-gray-900">
+                {/* Itemized Table: Product name, Product quantity, Product price, Total amount */}
+                <div className="bg-amber-50/50 rounded-2xl p-3 border border-amber-200/60">
+                  <div className="grid grid-cols-12 text-[11px] font-black uppercase text-amber-950 pb-2 border-b border-amber-200/60 tracking-wider">
+                    <span className="col-span-5">Product Name</span>
+                    <span className="col-span-2 text-center">Qty</span>
+                    <span className="col-span-2 text-right">Price</span>
+                    <span className="col-span-3 text-right">Total</span>
+                  </div>
+
+                  <div className="divide-y divide-amber-100/80 max-h-56 overflow-y-auto">
+                    {cart.map((item) => {
+                      const itemTotal = item.selectedVariant.price * item.quantity;
+                      return (
+                        <div
+                          key={item.cartItemId}
+                          className="grid grid-cols-12 text-xs py-2 items-center gap-1"
+                        >
+                          <div className="col-span-5 pr-1">
+                            <span className="font-bold text-[#29150B] block truncate" title={item.product.name}>
+                              {item.product.name}
+                            </span>
+                            <span className="text-[10px] text-amber-800/80 font-medium">
+                              {item.selectedVariant.label}
+                            </span>
+                          </div>
+                          <div className="col-span-2 text-center font-bold text-gray-700">
+                            {item.quantity}
+                          </div>
+                          <div className="col-span-2 text-right text-[11px] text-gray-600">
+                            Rs. {item.selectedVariant.price.toLocaleString()}
+                          </div>
+                          <div className="col-span-3 text-right font-extrabold text-amber-800 text-[11px]">
+                            Rs. {itemTotal.toLocaleString()}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Subtotal, Delivery Charges & Grand Total */}
+                <div className="space-y-2.5 text-sm divide-y divide-amber-100 pt-1">
+                  <div className="flex justify-between text-gray-700 pt-1">
+                    <span className="font-medium">Total Amount (Subtotal)</span>
+                    <span className="font-black text-gray-900">
                       Rs. {subtotal.toLocaleString()}
                     </span>
                   </div>
 
-                  <div className="flex justify-between text-gray-600 pt-3">
-                    <span className="flex items-center gap-1.5">
+                  <div className="flex justify-between text-gray-700 pt-2.5">
+                    <span className="flex items-center gap-1.5 font-medium">
                       <Truck className="w-4 h-4 text-amber-700" />
-                      <span>Cold-Chain Insulated Shipping</span>
+                      <span>Delivery Charges</span>
                     </span>
-                    <span className="font-bold text-gray-900">
+                    <span className="font-black">
                       {shippingFee === 0 ? (
-                        <span className="text-emerald-600 font-extrabold">FREE</span>
+                        <span className="text-emerald-600 font-extrabold">FREE (Order above Rs. 5000)</span>
                       ) : (
-                        `Rs. ${shippingFee.toLocaleString()}`
+                        `Rs. ${shippingFee.toLocaleString()} /=`
                       )}
                     </span>
                   </div>
 
-                  <div className="flex justify-between text-lg font-black text-[#29150B] pt-4">
-                    <span>Total Estimated Amount</span>
-                    <span className="text-2xl text-amber-700">
-                      Rs. {grandTotal.toLocaleString()}
+                  <div className="flex justify-between text-base font-black text-[#29150B] pt-3">
+                    <span>Grand Total</span>
+                    <span className="text-2xl text-amber-700 font-black">
+                      Rs. {grandTotal.toLocaleString()} /=
                     </span>
                   </div>
                 </div>
 
+                {/* Error Banner if missing details */}
+                {(formErrors.name || formErrors.address) && (
+                  <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-bold flex items-center gap-2">
+                    <span>⚠️ Please enter your Name and Delivery Address before ordering!</span>
+                  </div>
+                )}
+
                 {/* WhatsApp Order Button */}
-                <div className="space-y-3 pt-2">
+                <div className="space-y-3 pt-1">
                   <button
                     type="button"
                     onClick={handleWhatsAppOrder}
@@ -345,7 +438,7 @@ export default function CartPage() {
                   </button>
 
                   <p className="text-center text-[11px] text-gray-500 leading-relaxed">
-                    Clicking opens WhatsApp with your complete order breakdown pre-formatted. You can review and hit send!
+                    Clicking sends your complete invoice with product list, delivery address, and grand total to WhatsApp number <strong className="text-emerald-700">{siteConfig.phone}</strong>.
                   </p>
                 </div>
 

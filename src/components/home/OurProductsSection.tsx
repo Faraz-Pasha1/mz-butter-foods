@@ -18,7 +18,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Butter",
     category: "butter",
-    image: "/images/butter unsalted 3.jpeg",
+    image: "/images/Butter salted 2.jpeg",
     badge: "",
     description: "",
     link: "/products?category=butter",

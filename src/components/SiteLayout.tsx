@@ -7,6 +7,7 @@ import { Copyright } from "@/components/Copyright";
 import { CartDrawer } from "@/components/CartDrawer";
 import { SearchModal } from "@/components/SearchModal";
 import { ToastNotification } from "@/components/ToastNotification";
+import { WhatsAppFloating } from "@/components/WhatsAppFloating";
 
 export const SiteLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -29,6 +30,7 @@ export const SiteLayout: React.FC<{ children: React.ReactNode }> = ({ children }
       <CartDrawer />
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
       <ToastNotification />
+      <WhatsAppFloating />
     </div>
   );
 };
