@@ -46,7 +46,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
         <div className="flex items-center justify-between h-20">
           {/* i. Left Side – Logo with 3D Flip */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-18 h-18 rounded-full overflow-hidden border-2 border-amber-500/30 group-hover:border-amber-500 transition-colors bg-white shadow-xs logo-3d-flip">
+            <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-amber-500/30 group-hover:border-amber-500 transition-colors bg-white shadow-xs logo-3d-flip">
               <Image
                 src="/images/logo.png"
                 alt={siteConfig.name}
