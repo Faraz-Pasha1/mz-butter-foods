@@ -42,7 +42,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Chocolate & Chips",
     category: "chocolate",
-    image: "/images/Chocolate Chip.webp",
+    image: "/images/Chocolate chip.webp",
     badge: "",
     description: "",
     link: "/products?category=chocolate",
