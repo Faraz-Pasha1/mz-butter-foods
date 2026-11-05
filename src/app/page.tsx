@@ -8,6 +8,7 @@ import { WhyChooseUsSection } from "@/components/home/WhyChooseUsSection";
 import { KeyCustomersSection } from "@/components/home/KeyCustomersSection";
 import { SocialSubscribeSection } from "@/components/home/SocialSubscribeSection";
 import { NewsletterSection } from "@/components/home/NewsletterSection";
+import { CertificationSection } from "@/components/home/CertificationSection";
 
 export default function HomePage() {
   return (
@@ -38,6 +39,9 @@ export default function HomePage() {
 
       {/* 11. Subscribe Section: "Join our community with subscribe for update" */}
       <NewsletterSection />
+
+      {/* 12. Quality & Halal Certifications Section (just before footer) */}
+      <CertificationSection />
     </>
   );
 }

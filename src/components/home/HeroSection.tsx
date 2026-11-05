@@ -37,10 +37,22 @@ const slides: SlideData[] = [
   //   buttonText: "Shop All Dairy Creations",
   //   buttonLink: "/products",
   // },
+  // Slide 1: All Products
+  {
+    type: "image",
+    mediaUrl: "/images/Hero1.jfif",
+    categoryTag: "All Dairy & Sweets",
+    title: "Pure, Simple Butter Crafted for Professionals",
+    subtitle: "",
+    buttonText: "Shop",
+    buttonLink: "/products?category=alldairy&sweets",
+  },
+
+
   // Slide 2: Butter Slide
   {
     type: "image",
-    mediaUrl: "images/butter salted 3.jpeg",
+    mediaUrl: "/images/hero section 2.jfif",
     categoryTag: "Butter",
     title: "Pure, Simple Butter Crafted for Professionals",
     subtitle: "",
@@ -50,27 +62,27 @@ const slides: SlideData[] = [
   // Slide 3: Cream Slide
   {
     type: "image",
-    mediaUrl: "images/Desi Ghee.jpeg",
+    mediaUrl: "/images/Desi Ghee.jpeg",
     categoryTag: "Desi Ghee",
     title: "Desi Ghee for Rich Aroma & Authentic Taste",
-    subtitle: "",
-    buttonText: "Shop Fresh Cream",
-    buttonLink: "/products?category=cream",
-  },
-  // Slide 4: Desi Ghee Slide
-  {
-    type: "image",
-    mediaUrl: "images/arwa cream.jpg",
-    categoryTag: "Cream",
-    title: "Pure Creamy Perfection for Your Sweet Creations",
     subtitle: "",
     buttonText: "Shop Desi Ghee",
     buttonLink: "/products?category=ghee",
   },
+  // Slide 4: Desi Ghee Slide
+  {
+    type: "image",
+    mediaUrl: "/images/arwa cream.jpg",
+    categoryTag: "Cream",
+    title: "Pure Creamy Perfection for Your Sweet Creations",
+    subtitle: "",
+    buttonText: "Shop Cream",
+    buttonLink: "/products?category=cream",
+  },
   // Slide 5: Chocolate & Chip Slide
   {
     type: "image",
-    mediaUrl: "images/chocolates.jpg",
+    mediaUrl: "/images/chocolates.jpg",
     categoryTag: "Chocolate",
     title: "Premium Chocolates for Master Bakers",
     subtitle: "",
@@ -144,7 +156,7 @@ export const HeroSection: React.FC = () => {
                   playsInline
                   className="w-full h-full object-cover scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
 
                 {/* Video controls */}
                 <div className="absolute bottom-6 right-6 z-30 flex items-center gap-2">
@@ -178,7 +190,7 @@ export const HeroSection: React.FC = () => {
                   className="object-cover scale-105 transition-transform duration-10000"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/30" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent sm:from-black/45 sm:via-black/15 sm:to-transparent" />
               </div>
             )}
 
@@ -187,20 +199,22 @@ export const HeroSection: React.FC = () => {
               <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
                 <div className="max-w-2xl text-left space-y-4">
                   {/* Category Tag */}
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider backdrop-blur-md">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
                     <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
                     <span>{slide.categoryTag}</span>
                   </div>
 
                   {/* Title */}
-                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] drop-shadow-md">
+                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
                     {slide.title}
                   </h1>
 
                   {/* Subtitle */}
-                  <p className="text-base sm:text-lg text-amber-100/90 leading-relaxed font-normal max-w-xl">
-                    {slide.subtitle}
-                  </p>
+                  {slide.subtitle && (
+                    <p className="text-base sm:text-lg text-amber-100/95 leading-relaxed font-normal max-w-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                      {slide.subtitle}
+                    </p>
+                  )}
 
                   {/* Call to Action Button */}
                   <div className="pt-3 flex flex-wrap items-center gap-4">
@@ -249,8 +263,8 @@ export const HeroSection: React.FC = () => {
             key={idx}
             onClick={() => setCurrentSlide(idx)}
             className={`transition-all duration-300 rounded-full cursor-pointer ${idx === currentSlide
-                ? "w-8 h-2.5 bg-amber-400"
-                : "w-2.5 h-2.5 bg-white/50 hover:bg-white/90"
+              ? "w-8 h-2.5 bg-amber-400"
+              : "w-2.5 h-2.5 bg-white/50 hover:bg-white/90"
               }`}
             aria-label={`Go to slide ${idx + 1}`}
           />

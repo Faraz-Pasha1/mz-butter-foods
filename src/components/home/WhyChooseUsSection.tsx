@@ -17,33 +17,33 @@ const reasons: ReasonCard[] = [
   {
     id: "r1",
     number: "01",
-    headline: "Farm Purity",
-    details: "We source strictly from healthy, pasture-fed dairy cattle. Every batch is 100% pure milk without synthetic injections, thickeners, or chemical preservatives.",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80",
+    headline: "Farm Purity & Raw Quality",
+    details: "We source rich, pure farm milk directly to preserve natural freshness, rich fat content, and authentic dairy flavor in every batch.",
+    image: "/images/whyChoose1.jpg",
     icon: <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
   {
     id: "r2",
     number: "02",
-    headline: "Slow Churned",
-    details: "Our butter and desi ghee are clarified slowly over low flame, letting milk solids gently caramelize to unlock prized golden grains and nutty aromas.",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+    headline: "Slow Churning Excellence",
+    details: "Combining heritage slow-churning techniques with modern precision to deliver unmatched rich texture, golden color, and superior aroma.",
+    image: "/images/whyChoose2.jpg",
     icon: <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
   {
     id: "r3",
     number: "03",
-    headline: "Uncompromised Safety",
-    details: "Processed in hygienic cleanrooms with food-grade stainless steel churns. Packed in tamper-evident sealed tubs and jars to preserve wholesome dairy goodness.",
-    image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=800&q=80",
-    icon: <HeartHandshake className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
+    headline: "Uncompromised Safety & Quality",
+    details: "Processed in state-of-the-art clean environments strictly aligned with food safety standards and 100% Halal compliance.",
+    image: "/images/whyChoose3.jpg",
+    icon: <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
   {
     id: "r4",
     number: "04",
-    headline: "Cold Delivery",
-    details: "Dispatched straight from our farm cold facility in specialized insulated cooler packs. Butter stays firm, cream stays velvety, and aroma stays freshly locked in.",
-    image: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
+    headline: "Commercial & Industrial Supply",
+    details: "Engineered to meet the high-performance demands of food manufacturers, industrial bakeries, and food service providers with absolute consistency.",
+    image: "/images/whyChoose4.jpg",
     icon: <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
 ];
@@ -57,9 +57,9 @@ export const WhyChooseUsSection: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Why Choose Us
           </h2>
-          <p className="text-xs sm:text-base text-amber-100/70 mt-2 sm:mt-3">
+          {/* <p className="text-xs sm:text-base text-amber-100/70 mt-2 sm:mt-3">
             Hover or tap any card to reveal how we preserve dairy perfection without compromise.
-          </p>
+          </p> */}
         </div>
 
         {/* 4 Square Block Cards: 2 in one line on Mobile and Desktop */}

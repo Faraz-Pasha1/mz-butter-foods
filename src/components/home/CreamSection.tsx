@@ -18,22 +18,22 @@ export const CreamSection: React.FC = () => {
             </div> */}
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#29150B] tracking-tight leading-tight">
-              Mz Fresh Arwa Whipping Cream
+              Mz Butter
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed">
-              Unlike ultra-processed supermarket creams packed with synthetic thickeners and chemical gums, Mz Fresh Cream is gently separated from whole morning milk. It retains its full 40% natural butterfat content for sublime decadence.
+              We are committed to delivering quality butter with rich taste, creamy texture and consistent product standards. Our focus is on maintaining quality at every stage, from raw material handling and processing to packaging and storage.
             </p>
 
             {/* Feature Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
               {[
-                "40% Natural Butterfat Density",
-                "Whips Into Stiff, Glossy Peaks in 3 Mins",
-                "Unhomogenized & Free of Carrageenan",
-                "Rich Base for Curries, Desserts & Fruit Chaat",
-                "Sealed Cold-Chain Tamper Evident Tubs",
-                "Chilled Morning Home Dispatch",
+                "Provides energy for daily activities.",
+                "Contains fat-soluble vitamins A, E and K.",
+                "Enhances the taste and texture of meals, baking and desserts.",
+                "Supports Brain Function",
+                "Helps Absorb Vitamins",
+                "Improves Food Taste",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-amber-600/15 text-amber-700 flex items-center justify-center shrink-0">
@@ -49,28 +49,28 @@ export const CreamSection: React.FC = () => {
             {/* CTAs */}
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
-                href="/products/pure-rich-velvet-fresh-cream"
+                href="/products?category=butter"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-sm shadow-lg shadow-amber-600/25 transition-all hover:scale-105 active:scale-95"
               >
                 <ShoppingBag className="w-4 h-4" />
-                <span>Order Fresh Cream Now</span>
+                <span>Order Now</span>
               </Link>
-              <Link
-                href="/products?category=cream"
+              {/* <Link
+                href="/products?category=butter"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-amber-50 text-amber-900 font-bold text-sm border border-amber-300 shadow-xs transition-colors"
               >
-                <span>View Cream Varieties</span>
+                <span>View More</span>
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
-          {/* a. Right Side: Image of Cream */}
+          {/* a. Right Side: Image of butter */}
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-4/3 sm:aspect-square bg-amber-100">
               <Image
-                src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80"
-                alt="Mz Pure Velvet Fresh Cream"
+                src="/images/butterbenefitssection.jpg"
+                alt="Mz butter"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -79,7 +79,7 @@ export const CreamSection: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
               {/* Floating Testimonial Tag */}
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-xl border border-amber-200/80 flex items-center justify-between">
+              {/* <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-xl border border-amber-200/80 flex items-center justify-between">
                 <div>
                   <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700">
                     Artisanal Whipping Quality
@@ -93,7 +93,7 @@ export const CreamSection: React.FC = () => {
                     Farm Fresh
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Decorative background blur ring */}

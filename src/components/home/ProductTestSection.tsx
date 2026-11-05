@@ -7,31 +7,31 @@ import { ShieldCheck, Award, HeartPulse, Sparkles } from "lucide-react";
 export const ProductTestSection: React.FC = () => {
   const trustPoints = [
     {
-      title: "Perfect Whipping, Beautiful Results",
-      desc: "Create smooth, fluffy toppings and beautiful dessert finishes with ease.",
+      title: "Perfect Whipping & Peak Texture",
+      desc: "Whip up smooth, stable peaks effortlessly to give your desserts a professional, bakery-style finish every time.",
       icon: <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/arwa whipping cream.jpeg",
+      image: "/images/Cream1.jpg",
       alt: "Arwa Whipping Cream for perfect bakery results",
     },
     {
-      title: "Smooth & Creamy Texture",
-      desc: "Enjoy a creamy texture that helps bring your dessert ideas to life.",
+      title: "Rich & Velvety Taste",
+      desc: " Indulge in a rich, velvety consistency that melts in your mouth and elevates the flavor of any sweet creation.     ",
       icon: <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/Butter salted 2.jpeg",
+      image: "/images/cream2.jpg",
       alt: "Smooth and creamy pure churned butter",
     },
     {
-      title: "Trusted in Every Kitchen",
-      desc: "A delightful choice for home bakers and professionals creating memorable desserts.",
+      title: "Precision Decorating",
+      desc: "Perfect for piping crisp borders, rosettes, and intricate designs on cakes, tarts, and pastries with absolute ease.A delightful choice for home bakers and professionals creating memorable desserts.",
       icon: <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/Desi Ghee.jpeg",
-      alt: "Pure Desi Ghee trusted in commercial and home kitchens",
+      image: "/images/cream3.jpg",
+      alt: "Pure cream trusted in commercial and home kitchens",
     },
     {
-      title: "Care in Every Pack",
-      desc: "Choose quality and care for your everyday baking and special occasions.",
+      title: "Crafted for Excellence",
+      desc: "A reliable choice for home bakers and professional pastry chefs alike, designed to deliver exceptional baking resultsChoose quality and care for your everyday baking and special occasions.",
       icon: <HeartPulse className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/butter salted 3.jpeg",
+      image: "/images/cream4.jpg",
       alt: "Care in every pack of fresh chilled butter",
     },
   ];
@@ -94,7 +94,7 @@ export const ProductTestSection: React.FC = () => {
                       unoptimized
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                    
+
                     {/* Top corner index badge */}
                     <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-white/90 backdrop-blur-xs px-2 py-0.5 rounded-full border border-amber-200/50 shadow-2xs">
                       {point.icon}

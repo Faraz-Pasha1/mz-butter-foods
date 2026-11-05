@@ -1,35 +1,37 @@
 import { Product } from "@/types";
 
 export const products: Product[] = [
-  // ===================== 1. BUTTER (UNSALTED) =====================
+  // ===================== 1. PREMIUM BUTTER =====================
   {
     id: "butter-pure-creamery",
-    slug: "pure-creamery-butter",
-    name: "Salted Butter",
+    slug: "premium-butter",
+    name: "Premium Butter",
     category: "butter",
     categoryLabel: "Butter",
-    tagline: "Slow-churned from fresh sweet cream for unmatched richness",
-    shortDescription: "Crafted exclusively from 100% grass-fed buffalo and cow milk cream. Naturally sweet, dense, and golden with zero artificial yellow food dyes or emulsifiers.",
-    fullDescription: "Our signature Mz Pure Creamery Butter represents the quintessential golden standard of dairy craftsmanship. Sourced daily from pasture-raised livestock, the fresh milk is gently separated, allowed to naturally ripen, and churned in small traditional wooden and stainless-steel churns. The result is a silken, spreadable butter with a higher butterfat content of 82%, making it ideal for morning toast, flaky laminated croissants, delicate pastries, and sizzling steaks.",
+    tagline: "Slow-churned from fresh cream for rich flavour and smooth texture.",
+    shortDescription: "Made from 100% grass-fed buffalo and cow milk cream, our premium dairy butter offers a naturally sweet taste, smooth creamy texture, and rich flavour, with no added emulsifiers or artificial additives.",
+    fullDescription: "Our Pure Creamery Butter is crafted from fresh cow and buffalo milk cream, delivering a rich taste, smooth texture, and excellent performance for both home and professional kitchens. Carefully processed to maintain its natural dairy goodness, it is ideal for baking, cooking, pastries, croissants, and everyday spreading.",
     images: [
       "/images/Butter salted 2.jpeg",
       "/images/Butter salted 3.jpeg",
       "/images/Butter salted 3.jpeg"
     ],
-    price: 950,
-    originalPrice: 1100,
+    price: 2150,
+    originalPrice: 2450,
     variants: [
-      { id: "butter-500g", label: "500g", price: 950, originalPrice: 1100 },
-      { id: "butter-1kg", label: "1kg", price: 1850, originalPrice: 2150 },
+      { id: "premium-butter-1kg-unsalted", label: "1kg (Unsalted)", price: 2150, originalPrice: 2450 },
+      { id: "premium-butter-1kg-salted", label: "1kg (Salted)", price: 2250, originalPrice: 2550 },
+      { id: "premium-butter-10kg-unsalted", label: "10kg (Unsalted)", price: 20500, originalPrice: 23000 },
+      { id: "premium-butter-10kg-salted", label: "10kg (Salted)", price: 21500, originalPrice: 24000 },
     ],
     rating: 0,
     reviewsCount: 0,
     reviews: [],
     about: [
-      "100% Pure sweet farm cream churned daily in temperature-controlled facilities.",
+      "Fresh Dairy Cream: Made from quality cow and buffalo milk cream.",
       "82% Butterfat minimum for superior taste, melting point, and baking volume.",
-      "Zero added colors, zero preservatives, zero palm oil or vegetable shortening.",
-      "Packaged in parchment wrap inside a food-grade insulated box."
+      "Rich & Creamy: Smooth texture and naturally delicious buttery flavour.",
+      "Quality Packaging: Hygienically packed to maintain freshness and quality."
     ],
     benefits: [
       "Rich in natural fat-soluble vitamins A, D, E, and K2.",
@@ -38,225 +40,175 @@ export const products: Product[] = [
       "Supports gut health and smooth digestion due to natural butyric acid."
     ],
     uses: [
-      "Can be used to season and add depth to soups,stews, and marinades.",
-      "Adds rich, savory flavor to a variety of dishes, such as sauteed vegetables, scrambled eggs, and sauces.",
-      "Ideal for spreading on bread, rolls, and crackers, providing a flavorful addition to snacks and meals.",
-      "Perfect for brushing on meats and vegetables before grilling, enhancing their taste and preventing sticking"
+      "Perfect for baking croissants, cakes, cookies, biscuits, pastries, and other delicious baked goods.",
+      "Adds rich, creamy flavour to soups, sauces, gravies, sautéed vegetables, and everyday cooking.",
+      "Ideal for spreading on bread, toast, sandwiches, and rolls for a smooth and delicious taste.",
+      "Excellent for grilling and roasting meats, seafood, and vegetables, enhancing flavour and richness."
     ],
     faqs: [
       {
-        question: "How long does Mz Salted Butter stay fresh?",
+        question: "How long does Mz Premium Butter stay fresh?",
         answer: "Stored in the refrigerator below 4°C, it stays peak fresh for up to 60 days. You can also freeze it in its original packaging for up to 6 months."
       },
       {
-        question: "Is this butter salted or salted?",
-        answer: "This particular variant is salted Sweet Cream butter, giving you complete seasoning control over your dishes and baking."
-      },
-      {
-        question: "How is it delivered chilled?",
-        answer: "We dispatch orders in insulated thermal coolers with frozen gel packs via dedicated cold delivery riders so it reaches your doorstep firm and cold."
+        question: "Is this butter salted or unsalted?",
+        answer: "Available in both Unsalted and Salted variations to give you complete seasoning control over your culinary creations."
       }
     ],
-    landscapeBanner: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1600&q=80",
-    portraitFeature: "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=900&q=80",
+    landscapeBanner: "/images/productpagelandscape.jpg",
+    portraitFeature: "/images/productpageportraitpremium.jfif",
     inStock: true,
     featured: true,
   },
 
-  // ===================== 2. BUTTER (UNSALTED) =====================
+  // ===================== 2. BUTTER =====================
   {
     id: "butter-salted-table",
-    slug: "traditional-salted-table-butter",
-    name: "Unsalted Butter",
+    slug: "butter",
+    name: "Butter",
     category: "butter",
     categoryLabel: "Butter",
-    tagline: "Lightly touched with pure Himalayan pink mineral salt",
-    shortDescription: "Our slow-churned butter delicately kissed with natural pink rock salt. Irresistibly savory, creamy, and ready to elevate your morning breakfast table.",
-    fullDescription: "Blended with micro-crystallized Himalayan pink rock salt, Mz Traditional Salted Table Butter delivers an exquisite equilibrium of pure dairy sweetness and savory depth. It delivers a golden, velvety spread that transforms simple bread, boiled corn, morning eggs, or baked potatoes into a luxury gourmet treat.",
+    tagline: "Crafted from quality dairy cream for a naturally rich, creamy taste.",
+    shortDescription: "Our deliciously creamy butter, made from quality dairy cream to bring rich flavour, smooth texture, and everyday goodness to your breakfast table and favourite recipes.",
+    fullDescription: "Our quality dairy butter is made from cow and buffalo milk cream, offering a smooth texture and delicious buttery flavour for everyday use. Carefully processed and hygienically packed, it is a versatile choice for cooking, spreading, sauces, and a variety of culinary applications in homes, restaurants, and commercial kitchens.",
     images: [
       "/images/Butter unsalted 1.jpeg",
       "/images/Butter unsalted 1.jpeg",
       "/images/Butter unsalted 1.jpeg"
     ],
-    price: 980,
-    originalPrice: 1150,
+    price: 1850,
+    originalPrice: 2150,
     variants: [
-      { id: "salted-500g", label: "500g", price: 980, originalPrice: 1150 },
-      { id: "salted-1kg", label: "1kg", price: 1900, originalPrice: 2200 },
+      { id: "butter-1kg-unsalted", label: "1kg (Unsalted)", price: 1850, originalPrice: 2150 },
+      { id: "butter-1kg-salted", label: "1kg (Salted)", price: 1950, originalPrice: 2250 },
+      { id: "butter-10kg-unsalted", label: "10kg (Unsalted)", price: 17500, originalPrice: 20000 },
+      { id: "butter-10kg-salted", label: "10kg (Salted)", price: 18500, originalPrice: 21000 },
     ],
     rating: 0,
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Churned fresh every morning from grass-fed whole milk cream.",
-      "Seasoned with unrefined Himalayan pink salt rich in 84 trace minerals.",
-      "Free from artificial anti-caking agents and chemical preservatives."
+      "Quality Dairy Cream: Made from cow and buffalo milk cream.",
+      "Smooth & Creamy Texture: Adds delicious buttery flavour to everyday meals.",
+      "Versatile Applications: Ideal for cooking, spreading, sauces, and food preparation."
     ],
     benefits: [
-      "Contains balanced electrolytes from natural unrefined rock salt.",
       "Dense in fat-soluble vitamins and active dairy lipids.",
-      "No artificial sodium additives."
+      "100% pure dairy butterfat.",
+      "No artificial trans-fats or hydrogenated oils."
     ],
     uses: [
-      "Perfect breakfast spread on toast, crumpets, and bagels.",
-      "Melting over steamed vegetables, sweet corn cobs, and roasted potatoes.",
-      "Basting meats and poultry for deep savory caramelized crusts."
+      "Perfect for baking croissants, cakes, cookies, biscuits, pastries, and other delicious baked goods.",
+      "Adds rich, creamy flavour to soups, sauces, gravies, sautéed vegetables, and everyday cooking.",
+      "Ideal for spreading on bread, toast, sandwiches, and rolls for a smooth and delicious taste.",
+      "Excellent for grilling and roasting meats, seafood, and vegetables, enhancing flavour and richness."
     ],
     faqs: [
       {
-        question: "What type of salt is used?",
-        answer: "We use exclusively food-grade gourmet Himalayan pink rock salt, providing clean mineral flavor without harsh chemical additives."
+        question: "What is the difference between Salted and Unsalted?",
+        answer: "Unsalted is pure sweet cream butter, great for precise baking. Salted is lightly salted for daily breakfast and savory cooking."
       }
     ],
-    landscapeBanner: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=80",
-    portraitFeature: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=80",
+    landscapeBanner: "/images/productpagelandscapebutter.jpg",
+    portraitFeature: "/images/productpageportrait.jpg",
     inStock: true,
     featured: true,
   },
 
-  // ===================== 3. FRESH CREAM (VELVET) =====================
+  // ===================== 3. FRESH CREAM =====================
   {
     id: "cream-rich-velvet",
     slug: "pure-rich-velvet-fresh-cream",
     name: "Whipping Cream",
     category: "cream",
     categoryLabel: "Cream",
-    tagline: "Silky, thick, and farm-fresh with 40% natural butterfat",
-    shortDescription: "Dense, unhomogenized sweet dairy cream collected during first morning skimming. Ideal for whipping into cloud-like peaks, topping fruit chaat, or enriching rich gravies.",
-    fullDescription: "Mz Pure Rich Velvet Fresh Cream is the crown jewel of dairy indulgence. Unlike industrial creams that are ultra-pasteurized and chemically stabilized with carrageenan or gums, our fresh cream is gently separated from morning milk and chilled immediately. It retains the delicate floral and sweet notes of pure dairy with a natural 40% milkfat density that whips into stiff, luxurious peaks within minutes.",
+    tagline: "Whipped to perfection for a light, smooth texture and rich, creamy indulgence.",
+    shortDescription: "Rich and creamy whipping cream, perfect for cakes, pastries, desserts, and decorative toppings. Ideal for bakeries, cafés, and home kitchens seeking smooth texture and delicious flavour. ",
+    fullDescription: "Arwa Whipping Cream is a homogenized, non-dairy whipping cream designed to deliver a smooth texture, consistent performance, and excellent whipping results. Its creamy consistency makes it ideal for professional cake decoration, pastries, desserts, and bakery applications",
     images: [
       "/images/arwa cream.jpg",
       "/images/arwa whipping cream.jpeg",
       "/images/arwa cream.jpg"
     ],
-    price: 680,
-    originalPrice: 800,
+    price: 550,
+    originalPrice: 650,
     variants: [
-      { id: "cream-500g", label: "500g", price: 680, originalPrice: 800 },
-      { id: "cream-1kg", label: "1kg", price: 1300, originalPrice: 1550 },
+      { id: "cream-1litre", label: "1 Litre", price: 550, originalPrice: 650 },
     ],
     rating: 0,
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Skimmed fresh daily from pure whole farm milk.",
-      "40% natural dairy butterfat content for stable, glossy whipping.",
-      "Zero thickeners, zero starch, zero gelatins or emulsifiers.",
-      "Delivered cold-chain in tamper-evident sealed tubs."
+      "Homogenized Formulation: Provides a smooth and uniform cream consistency.",
+      "Excellent Whipping Performance: Whips into a light, fluffy texture suitable for decorative applications.",
+      "Smooth & Creamy Texture: Delivers an appealing finish for cakes and desserts.",
+      "Versatile Applications: Ideal for cake frosting, pastries, fillings, mousses, and dessert toppings."
     ],
     benefits: [
-      "Provides wholesome clean calories and essential dairy nutrients.",
-      "Rich in calcium and natural vitamin A for healthy skin and eyes.",
-      "Natural clean flavor without stale canned or UHT metallic aftertastes."
+      "Dairy-Free Alternative: Suitable for creating creamy desserts without dairy cream.",
+      "Energy Source: Provides dietary energy through its fat and carbohydrate con.",
+      "Versatile Nutrition: Can be incorporated into a variety of desserts and sweet preparations."
     ],
     uses: [
-      "Whip with a hint of vanilla and icing sugar for cake frosting and dessert tarts.",
-      "Fold into authentic fruit chaat, mango mousse, and trifles.",
-      "Stir into Mughlai gravies, butter chicken, dal makhani, and pasta alfredo.",
-      "Pour over freshly sliced seasonal strawberries or peaches."
+      "Ideal for cake decoration, frosting, and piping, delivering a smooth and consistent finish.",
+      "Perfect for preparing mousses, dessert fillings, pastries, and creamy confectionery creations.",
+      "Excellent for topping cakes, cupcakes, waffles, pancakes, and other desserts.",
+      "A reliable choice for bakeries, cafés, hotels, and professional kitchens seeking consistent whipping performance."
     ],
     faqs: [
       {
-        question: "Does this whip into stiff peaks?",
-        answer: "Yes! Because of its natural 40% fat content, ensure the cream and mixing bowl are thoroughly chilled before whipping. Stiff peaks form in 3 to 4 minutes."
+        question: "How should I store Arwa Whipping Cream?",
+        answer: "Always store the product frozen at -18°C to maintain its quality and freshness."
       },
       {
-        question: "How long can I keep it in the fridge?",
-        answer: "Because our fresh cream has no chemical stabilizers or chemical preservatives, keep it refrigerated between 2°C to 4°C and enjoy within 10 days of opening."
+        question: "How should I store it after opening?",
+        answer: "Once opened, keep the product refrigerated at +4°C to +8°C and consume within 3 days."
+      },
+      {
+        question: "How should I whip Arwa Whipping Cream?",
+        answer: "Thaw the cream under refrigerated conditions before use. Whip the chilled cream using a clean mixing bowl and whisk at medium to high speed until it reaches your desired consistency and forms stable peak."
       }
     ],
-    landscapeBanner: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1600&q=80",
-    portraitFeature: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80",
+    landscapeBanner: "/images/arwa cream.jpg",
+    portraitFeature: "/images/arwa whipping cream.png",
     inStock: true,
     featured: true,
   },
 
-  // ===================== 4. FRESH CREAM (FARM MALAI) =====================
-  // {
-  //   id: "cream-malai-clotted",
-  //   slug: "traditional-farm-malai-cream",
-  //   name: "Mz Traditional Farm Malai (Heavy Clotted)",
-  //   category: "cream",
-  //   categoryLabel: "Cream",
-  //   tagline: "Authentic slow-simmered thick creamy malai layers",
-  //   shortDescription: "Crafted in the authentic heritage style by gently simmering fresh grass-fed buffalo milk in wide shallow pans. Golden crust and dense layers.",
-  //   fullDescription: "For lovers of traditional desi breakfast and royal festive desserts, Mz Traditional Farm Malai is an artisanal wonder. We slow-simmer rich buffalo milk over gentle embers, allowing the thick cream layer to slowly rise and form dense, golden, crusted folds. Thick, rich, and unforgettable with warm sheermal or honey.",
-  //   images: [
-  //     "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80",
-  //     "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80",
-  //     "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
-  //   ],
-  //   price: 750,
-  //   originalPrice: 900,
-  //   variants: [
-  //     { id: "malai-500g", label: "500g", price: 750, originalPrice: 900 },
-  //     { id: "malai-1kg", label: "1kg", price: 1450, originalPrice: 1750 },
-  //   ],
-  //   rating: 0,
-  //   reviewsCount: 0,
-  //   reviews: [],
-  //   about: [
-  //     "Slow-simmered in wide vessels for natural malai fold formation.",
-  //     "Crafted exclusively from high-fat pure buffalo milk.",
-  //     "Thick clotted consistency that holds its shape."
-  //   ],
-  //   benefits: [
-  //     "Natural energy booster packed with healthy dairy fats.",
-  //     "Rich in natural fat-soluble fat-binding nutrients.",
-  //     "100% natural without artificial gum emulsifiers."
-  //   ],
-  //   uses: [
-  //     "Classic breakfast with tandoori naan, sheermal, jaggery, or organic honey.",
-  //     "Base for royal Shahi kheer, rasmalai, and rabri desserts.",
-  //     "Traditional Pakistani sweet dishes and gajar ka halwa topping."
-  //   ],
-  //   faqs: [
-  //     {
-  //       question: "Is this sweet or unsweetened?",
-  //       answer: "It is completely pure, unsweetened, and natural with only the subtle inherent sweetness of fresh milk."
-  //     }
-  //   ],
-  //   landscapeBanner: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1600&q=80",
-  //   portraitFeature: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80",
-  //   inStock: true,
-  //   featured: true,
-  // },
-
-  // ===================== 5. DESI GHEE (DANEDAR) =====================
+  // ===================== 4. DESI GHEE (DANEDAR) =====================
   {
     id: "ghee-traditional-danedar",
     slug: "traditional-danedar-desi-ghee",
     name: "Desi Ghee",
     category: "ghee",
     categoryLabel: "Desi Ghee",
-    tagline: "Slow-simmered golden grain ghee with signature intoxicating aroma",
-    shortDescription: "Cooked slowly over gentle flame from pure cultured butter until water evaporates and milk solids caramelize to golden perfection. Distinct granular (danedar) texture.",
-    fullDescription: "Mz Traditional Danedar Desi Ghee is celebrated for its hypnotic nutty fragrance, luminous golden amber color, and the signature crystalline granular texture cherished by desi culinary purists. Prepared by slowly clarifying our hand-churned butter, every batch is simmered to precise caramelization point, releasing authentic aromas that fill the home. Lactose-free, nutrient-dense, and shelf-stable without refrigeration.",
+    tagline: "Traditionally crafted Desi Ghee with a rich aroma and authentic danedar texture.",
+    shortDescription: "Cooked slowly over gentle flame from pure butter until water evaporates and milk solids caramelize to golden perfection. Perfect for traditional cooking, frying, parathas, and everyday Pakistani cuisine.",
+    fullDescription: "Our Traditional Desi Ghee is slowly prepared from quality butter to develop its rich aroma, authentic taste, and signature granular texture. Carefully clarified to deliver traditional goodness, it is perfect for cooking, frying, baking, parathas, and traditional sweets.",
     images: [
       "/images/Desi Ghee.jpeg",
       "/images/Desi Ghee.jpeg",
       "/images/Desi Ghee.jpeg"
     ],
-    price: 1850,
-    originalPrice: 2200,
+    price: 2800,
+    originalPrice: 3200,
     variants: [
-      { id: "ghee-500g", label: "500g", price: 1000, originalPrice: 1200 },
-      { id: "ghee-1kg", label: "1kg", price: 1850, originalPrice: 2200 },
+      { id: "ghee-1kg", label: "1kg", price: 2800, originalPrice: 3200 },
     ],
     rating: 0,
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Slow-cooked from pure butter churned from farm-fresh grass-fed milk.",
-      "High smoke point (250°C / 485°F) for healthy, clean cooking without burning.",
-      "Lactose-free and casein-free due to complete clarified separation.",
-      "Rich golden grain structure (danedar) preserved in glass jars."
+      "Traditional Preparation: Slowly clarified from quality butter.",
+      "Authentic Danedar Texture: Features a distinctive granular consistency.",
+      "Rich Aroma & Flavour: Adds traditional taste and richness to meals.",
+      "Versatile Cooking: Ideal for frying, sautéing, baking, and everyday cooking."
     ],
     benefits: [
-      "Abundant in butyrate to nourish the intestinal lining and support immunity.",
-      "Boosts metabolic absorption of turmeric, spices, and fat-soluble vitamins.",
-      "High thermal stability prevents harmful oxidation during high-heat cooking.",
-      "Ancient Ayurvedic superfood for joint vitality, stamina, and mental clarity."
+      "Natural Energy: Provides concentrated energy through naturally occurring dairy fats.",
+      "Essential Vitamins: Contains fat-soluble vitamins A, E, and K in varying amounts.",
+      "Vitamin Absorption: Supports the absorption of fat-soluble vitamins from other foods.",
+      "Traditional Nutrition: A time-honoured dairy fat used in traditional cuisines."
     ],
     uses: [
       "Aromatic sizzling tadka for lentils (daal), curries, and haleem.",
@@ -266,119 +218,64 @@ export const products: Product[] = [
     ],
     faqs: [
       {
-        question: "Does Mz Desi Ghee require refrigeration?",
-        answer: "No refrigeration is required! Pure clarified desi ghee is naturally shelf-stable for over 12 months when stored in a cool, dark pantry. Always use a dry, clean spoon."
+        question: "Does Desi Ghee require refrigeration?",
+        answer: "No, refrigeration is generally not required. Store Desi Ghee in a cool, dry place away from direct sunlight and moisture. Always use a clean, dry spoon to maintain freshness and quality."
       },
       {
-        question: "Why is the texture granular (danedar)?",
-        answer: "The granular crystals are the hallmark of authentic, slowly cooled, pure ghee made from pasture-raised milk butter. Industrial processed ghee lacks this natural grain."
+        question: "Why does Desi Ghee have a granular (Danedar) texture?",
+        answer: "The distinctive danedar texture develops during the natural cooling and crystallization of ghee, giving it its traditional grainy consistency and authentic appearance."
       }
     ],
-    landscapeBanner: "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=1600&q=80",
-    portraitFeature: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=900&q=80",
+    landscapeBanner: "",
+    portraitFeature: "",
     inStock: true,
     featured: true,
   },
 
-  // ===================== 6. DESI GHEE (BILONA COW) =====================
-  // {
-  //   id: "ghee-bilona-cow",
-  //   slug: "pure-bilona-cow-desi-ghee",
-  //   name: "Mz Pure Bilona Cow Desi Ghee",
-  //   category: "ghee",
-  //   categoryLabel: "Desi Ghee",
-  //   tagline: "Vedic bilona churned from grass-fed whole cow milk yogurt",
-  //   shortDescription: "Produced using the revered ancient 5-step Bilona method. Yogurt is hand-churned with bi-directional wooden whisks, then wood-fire simmered for therapeutic purity.",
-  //   fullDescription: "Mz Pure Bilona Cow Desi Ghee is prepared strictly adhering to ancient Vedic traditions. We take whole grass-fed cow milk, culture it into fresh active yogurt (dahi), and churn it using traditional wooden bilonas to separate the butter (makkhan). This cultured butter is then gently simmered over controlled low flame, yielding a bright golden, light, easily digestible ghee with therapeutic properties.",
-  //   images: [
-  //     "https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=900&q=80",
-  //     "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=900&q=80",
-  //     "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=80"
-  //   ],
-  //   price: 2150,
-  //   originalPrice: 2500,
-  //   variants: [
-  //     { id: "bilona-500g", label: "500g", price: 1150, originalPrice: 1350 },
-  //     { id: "bilona-1kg", label: "1kg", price: 2150, originalPrice: 2500 },
-  //   ],
-  //   rating: 0,
-  //   reviewsCount: 0,
-  //   reviews: [],
-  //   about: [
-  //     "Made from cultured whole cow milk yogurt, not direct cream separation.",
-  //     "Traditional two-way bilona churning preserves delicate nutritional enzymes.",
-  //     "Natural golden beta-carotene color from green grass pasture diet.",
-  //     "Packaged in heavy amber glass jars to protect from light degradation."
-  //   ],
-  //   benefits: [
-  //     "Easier on the stomach and digestion compared to direct cream ghee.",
-  //     "Supports healthy cholesterol balance and cardiovascular function.",
-  //     "Nourishes memory, brain development, and restorative sleep."
-  //   ],
-  //   uses: [
-  //     "Take 1 teaspoon in morning warm water or herbal tea.",
-  //     "Pour over steaming basmati rice, lentils, and khichdi.",
-  //     "Gentle massage for infants, dry skin, and soothing joints."
-  //   ],
-  //   faqs: [
-  //     {
-  //       question: "How is Bilona ghee different from regular cream ghee?",
-  //       answer: "Regular commercial ghee is made directly by heating raw cream. Bilona ghee first converts milk into cultured yogurt, churns the yogurt into butter, and clarifies the butter. It requires nearly 25-30 liters of milk for 1 kg of ghee!"
-  //     }
-  //   ],
-  //   landscapeBanner: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=1600&q=80",
-  //   portraitFeature: "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=900&q=80",
-  //   inStock: true,
-  //   featured: true,
-  // },
-
-  // ===================== 7. CHOCOLATE (ARTISANAL SPREAD) =====================
+  // ===================== 5. BLACK CHOCOLATE CHIP =====================
   {
     id: "choc-artisanal-spread",
-    slug: "artisanal-chocolate-butter-spread",
-    name: "Mz Chocolate Chips",
+    slug: "black-chocolate-chip",
+    name: "Black Chocolate Chip",
     category: "chocolate",
     categoryLabel: "Chocolate & Chip",
-    tagline: "Velvety farm butter whipped with premium roasted Belgian cocoa",
-    shortDescription: "A gourmet fusion of our signature sweet cream butter, dark Dutch-processed cocoa, and real cane sugar. Zero palm oil, zero artificial hydrogenated fats.",
-    fullDescription: "Mz Artisanal Chocolate Butter Spread is the delicious antidote to industrial palm-oil heavy hazelnut spreads. We blend our fresh sweet cream butter with fine roasted Dutch-processed cocoa, pure vanilla beans, and unrefined cane sugar. It spreads like molten silk at room temperature, offering deep chocolate intensity followed by the luscious, clean melt of authentic dairy butter.",
+    tagline: "Rich premium dark cocoa chocolate chips for gourmet baking",
+    shortDescription: "Premium dark chocolate chips crafted with rich cocoa solids. Holds its shape in high-heat baking while delivering intense cocoa indulgence.",
+    fullDescription: "Mz Black Chocolate Chips are crafted specifically for passionate bakers, confectioners, and dessert artisans. With rich cocoa solids and a balanced melt profile, they deliver rich chocolate taste in cookies, brownies, cakes, and artisanal pastries.",
     images: [
       "/images/Chocolate chip.webp",
       "/images/Chocolate chip.webp",
       "/images/Chocolate chip.webp"
     ],
-    price: 850,
-    originalPrice: 1000,
+    price: 800,
+    originalPrice: 950,
     variants: [
-      { id: "choc-spread-500g", label: "500g", price: 850, originalPrice: 1000 },
-      { id: "choc-spread-1kg", label: "1kg", price: 1600, originalPrice: 1900 },
+      { id: "black-chip-1kg", label: "1kg", price: 800, originalPrice: 950 },
+      { id: "black-chip-25kg", label: "25kg", price: 20000, originalPrice: 23500 },
     ],
     rating: 0,
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Crafted with 70% dark cocoa and farm-fresh Mz sweet cream butter.",
-      "100% Free of palm oil, soy lecithin, and artificial preservatives.",
-      "Naturally sweetened with pure cane sugar and real Bourbon vanilla."
+      "Crafted with premium dark cocoa solids.",
+      "Bake-stable formula that retains distinct morsel shape.",
+      "100% Free of artificial preservatives.",
+      "Available in 1kg retail packs and 25kg commercial bulk sacks."
     ],
     benefits: [
-      "Natural energy from pure cocoa flavonoids and butter fats.",
-      "Contains powerful antioxidants for mood elevation.",
-      "Wholesome breakfast alternative for growing children."
+      "Rich in natural cocoa antioxidants.",
+      "Superior melt and texture in bakery recipes.",
+      "Commercial-grade consistency for professional and home bakers."
     ],
     uses: [
-      "Generously spread on warm crepes, pancakes, French toast, and brioche.",
-      "Frosting for brownies, chocolate cupcakes, and birthday sponge cakes.",
-      "Stir into warm milk for an instant gourmet hot cocoa."
+      "Classic chocolate chip cookies, fudge brownies, and muffins.",
+      "Fold into waffles, pancakes, and ice cream sundaes.",
+      "Melt smoothly for chocolate ganache, dipping, and cake drizzle."
     ],
     faqs: [
       {
-        question: "Does it contain palm oil?",
-        answer: "Never! All commercial hazelnut spreads are over 50% cheap palm oil. Mz Chocolate Butter Spread uses exclusively our pure dairy creamery butter as the fat base."
-      },
-      {
-        question: "Should it be kept in the fridge or pantry?",
-        answer: "For easy spreading, keep in a cool pantry. In summer or hot weather, store in the fridge and take out 5 minutes before spreading."
+        question: "Are these bake-stable?",
+        answer: "Yes, Mz Black Chocolate Chips are formulated to hold their shape beautifully through high oven temperatures while melting deliciously on the palate."
       }
     ],
     landscapeBanner: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1600&q=80",
@@ -387,48 +284,49 @@ export const products: Product[] = [
     featured: true,
   },
 
-  // ===================== 8. CHOCOLATE (CHOCO-CHIP CRUNCH) =====================
+  // ===================== 6. WHITE CHOCOLATE CHIP =====================
   {
     id: "choc-chip-dairy-fudge",
-    slug: "chocochip-dairy-crunch-spread",
-    name: "Mz White Chip",
+    slug: "white-chocolate-chip",
+    name: "White Chocolate Chip",
     category: "chocolate",
     categoryLabel: "Chocolate & Chip",
-    tagline: "Creamy cocoa butter loaded with crisp dark chocolate micro-chips",
-    shortDescription: "A decadent blend of velvety dairy chocolate cream studded with generous crunchy dark chocolate chips. Every spoonful delivers smooth creaminess and satisfying crunch.",
-    fullDescription: "Taking chocolate indulgence to the next level, Mz Choco-Chip Dairy Crunch Spread blends our signature whipped cream butter and cocoa with crunchy miniature Belgian dark chocolate chips. Perfect for dessert lovers who crave texture contrast on their waffles, morning toast, or straight from the spoon.",
+    tagline: "Creamy whole milk white chocolate chips for luxurious confectionery",
+    shortDescription: "Smooth, velvety white chocolate chips made from rich milk solids and cocoa butter. Adds creamy sweetness and contrast to cookies and pastries.",
+    fullDescription: "Mz White Chocolate Chips offer an irresistible dairy creaminess and sweet vanilla finish. Ideal for red velvet cookies, blondies, festive confectionery, and artisanal cake decoration.",
     images: [
       "/images/White chip.jpeg",
       "/images/White chip.jpeg",
       "/images/White chip.jpeg"
     ],
     price: 900,
-    originalPrice: 1100,
+    originalPrice: 1050,
     variants: [
-      { id: "choc-chip-500g", label: "500g", price: 900, originalPrice: 1100 },
-      { id: "choc-chip-1kg", label: "1kg", price: 1700, originalPrice: 2000 },
+      { id: "white-chip-1kg", label: "1kg", price: 900, originalPrice: 1050 },
+      { id: "white-chip-25kg", label: "25kg", price: 22500, originalPrice: 26000 },
     ],
     rating: 0,
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Studded with 55% dark chocolate micro chips that retain crunchy texture.",
-      "Blended into pure whipped butter and cocoa emulsion.",
-      "No chemical preservatives or synthetic flavorings."
+      "Velvety smooth white chocolate morsels with whole milk solids.",
+      "Bake-stable texture that holds up in ovens and batters.",
+      "Available in 1kg retail packs and 25kg bulk commercial sacks.",
+      "Zero chemical aftertastes."
     ],
     benefits: [
-      "Rich in cocoa polyphenols and natural healthy dairy fats.",
-      "A comforting wholesome treat without hydrogenated trans fats."
+      "Rich creamy dairy profile.",
+      "Striking visual contrast and creamy melt in baked goods."
     ],
     uses: [
-      "Warm dessert topping over scoops of vanilla or coffee gelato.",
-      "Sandwiched between crispy tea biscuits or graham crackers.",
-      "Dolloped on morning oatmeal or smoothie bowls."
+      "Red velvet cookies, matcha brownies, and macadamia nut cookies.",
+      "Melted into creamy white chocolate glazes and dessert mousses.",
+      "Decorative topping for cakes, cupcakes, and dessert platters."
     ],
     faqs: [
       {
-        question: "Do the chocolate chips melt into the spread?",
-        answer: "No, the micro chocolate chips are formulated to remain crisp and distinct at room temperature, giving a wonderful dual texture in every bite."
+        question: "What pack sizes are available?",
+        answer: "Available in convenient 1kg home packs and 25kg wholesale bulk sacks for bakeries and commercial production."
       }
     ],
     landscapeBanner: "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=1600&q=80",

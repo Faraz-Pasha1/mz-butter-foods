@@ -16,6 +16,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant>(
     product.variants[0] || { id: "default", label: "Standard", price: product.price }
   );
+  const isButter = product.category === "butter";
+  const [butterType, setButterType] = useState<"Unsalted" | "Salted">("Unsalted");
+  const [butterWeight, setButterWeight] = useState<"1kg" | "10kg">("1kg");
   const [quantity, setQuantity] = useState<number>(0);
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -143,30 +146,108 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
         {/* Action Controls Section */}
         <div className="mt-4 pt-3 border-t border-amber-100">
-          {/* Button of Options (2 options of kg) */}
+          {/* Button of Options */}
           <div className="mb-3">
-            <div className="grid grid-cols-2 gap-1.5 p-1 bg-amber-50/70 rounded-xl border border-amber-200/50">
-              {product.variants.slice(0, 2).map((variant) => {
-                const isSelected = selectedVariant.id === variant.id;
-                return (
-                  <button
-                    key={variant.id}
-                    type="button"
-                    onClick={() => setSelectedVariant(variant)}
-                    className={`text-xs py-1.5 px-2 rounded-lg font-bold transition-all text-center cursor-pointer ${
-                      isSelected
-                        ? "bg-amber-600 text-white shadow-xs"
-                        : "text-amber-900/80 hover:bg-amber-100/80"
-                    }`}
-                  >
-                    <span>{variant.label}</span>
-                    <span className="text-[10px] block opacity-85 font-normal">
-                      Rs. {variant.price.toLocaleString()}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
+            {isButter ? (
+              <div className="grid grid-cols-2 gap-2">
+                {/* Weight Options (1kg / 10kg) */}
+                <div>
+                  <div className="text-[10px] uppercase font-bold text-gray-500 mb-1 text-center tracking-wider">
+                    Weight
+                  </div>
+                  <div className="grid grid-cols-2 gap-1 p-1 bg-amber-50/70 rounded-xl border border-amber-200/50">
+                    {(["1kg", "10kg"] as const).map((w) => {
+                      const isSelected = butterWeight === w;
+                      return (
+                        <button
+                          key={w}
+                          type="button"
+                          onClick={() => {
+                            setButterWeight(w);
+                            const matched = product.variants.find((v) => {
+                              const l = v.label.toLowerCase();
+                              const matchesW = w === "10kg" ? l.includes("10kg") : l.includes("1kg") && !l.includes("10kg");
+                              const matchesT = butterType === "Unsalted" ? l.includes("unsalted") : l.includes("salted") && !l.includes("unsalted");
+                              return matchesW && matchesT;
+                            });
+                            if (matched) setSelectedVariant(matched);
+                          }}
+                          className={`text-xs py-1.5 px-1 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                            isSelected
+                              ? "bg-amber-600 text-white shadow-xs"
+                              : "text-amber-900/80 hover:bg-amber-100/80"
+                          }`}
+                        >
+                          {w}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Salted / Unsalted Options */}
+                <div>
+                  <div className="text-[10px] uppercase font-bold text-gray-500 mb-1 text-center tracking-wider">
+                    Type
+                  </div>
+                  <div className="grid grid-cols-2 gap-1 p-1 bg-amber-50/70 rounded-xl border border-amber-200/50">
+                    {(["Unsalted", "Salted"] as const).map((t) => {
+                      const isSelected = butterType === t;
+                      return (
+                        <button
+                          key={t}
+                          type="button"
+                          onClick={() => {
+                            setButterType(t);
+                            const matched = product.variants.find((v) => {
+                              const l = v.label.toLowerCase();
+                              const matchesW = butterWeight === "10kg" ? l.includes("10kg") : l.includes("1kg") && !l.includes("10kg");
+                              const matchesT = t === "Unsalted" ? l.includes("unsalted") : l.includes("salted") && !l.includes("unsalted");
+                              return matchesW && matchesT;
+                            });
+                            if (matched) setSelectedVariant(matched);
+                          }}
+                          className={`text-xs py-1.5 px-1 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                            isSelected
+                              ? "bg-amber-600 text-white shadow-xs"
+                              : "text-amber-900/80 hover:bg-amber-100/80"
+                          }`}
+                        >
+                          {t}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div
+                className={`grid ${
+                  product.variants.length === 1 ? "grid-cols-1" : "grid-cols-2"
+                } gap-1.5 p-1 bg-amber-50/70 rounded-xl border border-amber-200/50`}
+              >
+                {product.variants.slice(0, 2).map((variant) => {
+                  const isSelected = selectedVariant.id === variant.id;
+                  return (
+                    <button
+                      key={variant.id}
+                      type="button"
+                      onClick={() => setSelectedVariant(variant)}
+                      className={`text-xs py-1.5 px-2 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                        isSelected
+                          ? "bg-amber-600 text-white shadow-xs"
+                          : "text-amber-900/80 hover:bg-amber-100/80"
+                      }`}
+                    >
+                      <span>{variant.label}</span>
+                      <span className="text-[10px] block opacity-85 font-normal">
+                        Rs. {variant.price.toLocaleString()}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {/* Quantity Controls and Add to Cart Button */}

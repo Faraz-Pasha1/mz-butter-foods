@@ -20,7 +20,7 @@ export const SocialSubscribeSection: React.FC = () => {
             Follow &amp; Subscribe on Social Media
           </h2>
           <p className="text-sm sm:text-base text-gray-600 mt-2">
-            Get daily glimpses of farm milk collection, morning butter churning, and mouthwatering recipe reels!
+            Get daily glimpses of collection, morning butter churning, and mouthwatering recipe.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export const SocialSubscribeSection: React.FC = () => {
               {/* Facebook Page Banner Image with QR Overlay */}
               <div className="relative rounded-2xl overflow-hidden aspect-16/9 bg-blue-50 border border-blue-100">
                 <Image
-                  src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80"
+                  src="/images/Hero1.jfif"
                   alt="MZ Butter & Foods Facebook community"
                   fill
                   className="object-cover"
@@ -61,7 +61,7 @@ export const SocialSubscribeSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
                 {/* QR Code Inset Box */}
-                <div className="absolute bottom-3 right-3 bg-white p-2 rounded-xl shadow-lg border border-amber-200 flex items-center gap-2">
+                {/* <div className="absolute bottom-3 right-3 bg-white p-2 rounded-xl shadow-lg border border-amber-200 flex items-center gap-2">
                   <div className="w-16 h-16 bg-blue-50 rounded-lg flex flex-col items-center justify-center p-1 text-blue-700">
                     <QrCode className="w-9 h-9" />
                     <span className="text-[8px] font-black mt-0.5">SCAN FB</span>
@@ -74,16 +74,16 @@ export const SocialSubscribeSection: React.FC = () => {
                       Follow Page
                     </span>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="absolute bottom-3 left-4 text-white">
+                {/* <div className="absolute bottom-3 left-4 text-white">
                   <span className="text-xs font-bold block drop-shadow-md">
                     Live Farm Video Updates
                   </span>
                   <span className="text-[10px] text-amber-200 drop-shadow-xs">
                     Weekly recipe live streams
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -127,7 +127,7 @@ export const SocialSubscribeSection: React.FC = () => {
               {/* Instagram Feed Image with QR Overlay */}
               <div className="relative rounded-2xl overflow-hidden aspect-16/9 bg-pink-50 border border-pink-100">
                 <Image
-                  src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80"
+                  src="/images/logo.jpg"
                   alt="Mz Butter & foods Instagram feed"
                   fill
                   className="object-cover"
@@ -136,7 +136,7 @@ export const SocialSubscribeSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
                 {/* QR Code Inset Box */}
-                <div className="absolute bottom-3 right-3 bg-white p-2 rounded-xl shadow-lg border border-amber-200 flex items-center gap-2">
+                {/* <div className="absolute bottom-3 right-3 bg-white p-2 rounded-xl shadow-lg border border-amber-200 flex items-center gap-2">
                   <div className="w-16 h-16 bg-pink-50 rounded-lg flex flex-col items-center justify-center p-1 text-pink-700">
                     <QrCode className="w-9 h-9" />
                     <span className="text-[8px] font-black mt-0.5">SCAN IG</span>
@@ -149,16 +149,16 @@ export const SocialSubscribeSection: React.FC = () => {
                       Follow Reels
                     </span>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="absolute bottom-3 left-4 text-white">
+                {/* <div className="absolute bottom-3 left-4 text-white">
                   <span className="text-xs font-bold block drop-shadow-md">
                     Baking &amp; Cooking Reels
                   </span>
                   <span className="text-[10px] text-pink-200 drop-shadow-xs">
                     Tag #MzButterFoods
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
 
