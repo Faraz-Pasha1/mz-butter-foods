@@ -19,7 +19,7 @@ const careerPositions = [
   "General Application / Any Department",
   "Dairy Production Specialist & Churn Master",
   "Quality Assurance & Milk Chemist",
-  "Cold-Chain Logistics & Dispatch Supervisor",
+  "Logistics & Dispatch Supervisor",
   "E-Commerce & WhatsApp Support Executive",
   "Sales & Retail Distribution Representative",
   "Accounts & Finance Executive",

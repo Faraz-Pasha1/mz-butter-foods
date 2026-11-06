@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
@@ -39,6 +39,20 @@ export default function CartPage() {
   const [customerNotes, setCustomerNotes] = useState("");
   const [formErrors, setFormErrors] = useState<{ name?: string; address?: string }>({});
 
+  // Sync with localStorage so inputs in drawer or cart page are preserved
+  useEffect(() => {
+    try {
+      const savedName = localStorage.getItem("mz_customer_name");
+      const savedAddress = localStorage.getItem("mz_customer_address");
+      const savedPhone = localStorage.getItem("mz_customer_phone");
+      if (savedName) setCustomerName(savedName);
+      if (savedAddress) setCustomerAddress(savedAddress);
+      if (savedPhone) setCustomerPhone(savedPhone);
+    } catch {
+      // LocalStorage fallback
+    }
+  }, []);
+
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
     e.preventDefault();
     const errors: { name?: string; address?: string } = {};
@@ -58,6 +72,17 @@ export default function CartPage() {
     }
 
     setFormErrors({});
+
+    // Save to localStorage
+    try {
+      localStorage.setItem("mz_customer_name", customerName.trim());
+      localStorage.setItem("mz_customer_address", customerAddress.trim());
+      if (customerPhone.trim()) {
+        localStorage.setItem("mz_customer_phone", customerPhone.trim());
+      }
+    } catch {
+      // LocalStorage fallback
+    }
 
     // Generate prefilled WhatsApp link with customer details
     const link = generateWhatsAppLink({
@@ -121,7 +146,7 @@ export default function CartPage() {
                     <Truck className="w-4 h-4 text-amber-700" />
                     {freeShippingLeft === 0 ? (
                       <span className="text-emerald-700 font-extrabold">
-                        Congratulations! You have qualified for FREE Cold Delivery! 🎉
+                        Congratulations! You have qualified for FREE Delivery! 🎉
                       </span>
                     ) : (
                       <span>

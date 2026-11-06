@@ -42,7 +42,7 @@ const certificates: Certificate[] = [
     highlights: [
       "Certified under Food Safety Management System ISO 22000:2018",
       "Comprehensive HACCP hazard analysis and critical control points",
-      "Strict cold-chain logistics and sealed tamper-evident packaging",
+      "Strict delivery logistics and sealed tamper-evident packaging",
       "Microbiologically tested for pristine purity and fresh taste",
     ],
   },
@@ -68,7 +68,7 @@ export const CertificationSection: React.FC = () => {
             Our Quality & Halal Certifications
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed font-normal">
-            At MZ Butter & Foods, quality is never a compromise. Our state-of-the-art processing, cold-chain handling, and pure sourcing are accredited by leading international standards bodies.
+            At MZ Butter & Foods, quality is never a compromise. Our state-of-the-art processing, hygienic delivery handling, and pure sourcing are accredited by leading international standards bodies.
           </p>
         </div>
 
@@ -166,8 +166,8 @@ export const CertificationSection: React.FC = () => {
               <span className="text-xs text-gray-600 font-medium">Halal Verified</span>
             </div>
             <div className="p-2">
-              <span className="block text-2xl font-black text-emerald-700 font-serif">Cold-Chain</span>
-              <span className="text-xs text-gray-600 font-medium">Fresh Doorstep Delivery</span>
+              <span className="block text-2xl font-black text-emerald-700 font-serif">Fast</span>
+              <span className="text-xs text-gray-600 font-medium">Doorstep Delivery</span>
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ export default function AboutPage() {
       <section className="relative py-20 sm:py-28 bg-[#1C0E07] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1600&q=80"
+            src=""
             alt="Mz Butter & foods farm pasture"
             fill
             priority
@@ -34,10 +34,10 @@ export default function AboutPage() {
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-4">
-          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/20 px-3.5 py-1.5 rounded-full border border-amber-500/30">
+          {/* <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/20 px-3.5 py-1.5 rounded-full border border-amber-500/30">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>Our Farm Heritage &amp; Craft</span>
-          </div>
+          </div> */}
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight">
             About Mz Butter &amp; Foods
@@ -52,17 +52,17 @@ export default function AboutPage() {
       {/* 2. 3 Paragraph Details */}
       <section className="py-16 sm:py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed font-normal">
-          <p className="first-letter:text-5xl first-letter:font-black first-letter:text-amber-700 first-letter:mr-2 first-letter:float-left">
+          {/* <p className="first-letter:text-5xl first-letter:font-black first-letter:text-amber-700 first-letter:mr-2 first-letter:float-left">
             Founded with an uncompromising devotion to pastoral purity, <strong>{siteConfig.name}</strong> was born from a simple observation: modern supermarket dairy has lost its soul. In an era dominated by high-speed industrial homogenization, synthetic color additives, and cheap palm-oil substitutions, real churned butter and fragrant danedar desi ghee have become tragic rarities. We embarked on a journey back to the roots of traditional dairy craftsmanship.
-          </p>
+          </p> */}
 
           <p>
-            Every single batch of our butter, fresh cream, and desi ghee originates from healthy, pasture-raised cattle fed on clean, natural green clover and canal-irrigated grass. We collect the whole milk within hours of dawn, gently separate the sweet cream at controlled low temperatures, and churn it using time-honored artisanal methods. We never add artificial yellow food dyes, chemical stabilizers, starch, or preservatives — what you taste is 100% pure, honest milkfat in its most magnificent form.
+            MZ Butter and Foods, established in 2016, carries forward a legacy rooted in tradition and family values. Named in honour of our grandparents, Majeed and Zaitoon, the company was founded with a commitment to excellence in the processing of premium butter and other dairy products. We believe that great taste starts with quality. We focus on delivering rich flavour, a smooth and creamy texture, and reliable product quality to meet the needs of our customers.Bringing Quality and Creaminess to Every Table.
           </p>
 
-          <p>
+          {/* <p>
             Today, Mz Butter &amp; Foods is proud to supply hundreds of premier French patisseries, artisanal sourdough bakeries, luxury hotel kitchens, and thousands of health-conscious households. From the cloud-like peaks of our fresh velvet cream to the intoxicating aroma of our slow-simmered danedar desi ghee, we invite you to rediscover what pure dairy was always meant to be.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -125,7 +125,7 @@ export default function AboutPage() {
               {[
                 "Preserve authentic slow-simmering and churn traditions.",
                 "Guarantee 100% traceability from trusted pasture farms.",
-                "Provide cold-chain doorstep delivery that protects natural freshness.",
+                "Provide doorstep delivery that protects natural freshness.",
                 "Support fair compensation and sustainable care for dairy cattle.",
               ].map((m, idx) => (
                 <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-800 font-medium">
@@ -167,7 +167,7 @@ export default function AboutPage() {
               Becoming the Benchmark of Pure Artisanal Food Across the Region
             </h3>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              We envision a culinary landscape where every household has instant access to real, wholesome, farm-fresh dairy without question or doubt. Our vision expands to pioneering artisanal chocolate spreads made without palm oil, heirloom bilona ghee varieties, and fostering transparency across the agricultural supply chain.
+              Our vision is to be a global leader in the dairy industry, recognized for our unwavering commitment to quality, innovation, and customer satisfaction. We aim to penetrate new international markets by forming strategic partnerships, adapting to diverse consumer preferences, and adhering to global quality and safety standards.
             </p>
             <div className="space-y-2.5 pt-2">
               {[
@@ -215,8 +215,8 @@ export default function AboutPage() {
             </div>
             <div className="bg-white p-6 rounded-2xl border border-amber-100 shadow-xs text-center flex flex-col items-center">
               <Truck className="w-10 h-10 text-purple-600 mb-3" />
-              <h4 className="font-extrabold text-sm text-[#29150B]">Cold-Chain Express</h4>
-              <p className="text-xs text-gray-500 mt-1">Chilled arrival guaranteed</p>
+              <h4 className="font-extrabold text-sm text-[#29150B]">Express Delivery</h4>
+              <p className="text-xs text-gray-500 mt-1">Prompt arrival guaranteed</p>
             </div>
           </div>
         </div>

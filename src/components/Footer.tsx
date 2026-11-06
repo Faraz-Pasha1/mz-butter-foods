@@ -51,7 +51,7 @@ export const Footer: React.FC = () => {
                 </div>
               </Link>
               <p className="text-xs text-amber-100/70 leading-relaxed max-w-sm">
-                Pure sweet cream butter, dense velvet fresh cream, and traditional slow-simmered danedar desi ghee. 100% farm milk, zero adulterants, chilled cold-chain delivery directly to your home.
+                Pure sweet cream butter, dense velvet fresh cream, and traditional slow-simmered danedar desi ghee. 100% farm milk, zero adulterants, fresh delivery directly to your home.
               </p>
               <div className="pt-2 flex items-center gap-2 text-xs text-amber-300">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -109,7 +109,7 @@ export const Footer: React.FC = () => {
                     onClick={() => setActivePolicy("shipping")}
                     className="text-amber-100/80 hover:text-amber-300 transition-colors flex items-center gap-2 cursor-pointer text-left"
                   >
-                    <span>• Cold-Chain Shipping Policy</span>
+                    <span>• Delivery &amp; Shipping Policy</span>
                   </button>
                 </li>
                 <li>

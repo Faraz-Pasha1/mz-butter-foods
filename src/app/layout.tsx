@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Bilona Cow Ghee",
     "Chocolate Butter Spread",
     "MZ Butter",
-    "Cold Chain Dairy Delivery",
+    "Fresh Dairy Delivery",
     "Karachi Fresh Dairy",
   ],
   authors: [{ name: siteConfig.name }],

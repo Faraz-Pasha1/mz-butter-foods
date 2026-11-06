@@ -38,12 +38,12 @@ export const siteConfig = {
     },
     shipping: {
       title: "Shipping & Delivery Policy",
-      content: `Freshness is our top priority. Here is how our cold-chain delivery works:
+      content: `Freshness is our top priority. Here is how our delivery works:
 
-1. Delivery Coverage: We provide temperature-controlled, chilled delivery across the city and surrounding areas.
-2. Timings: Orders placed before 4:00 PM are dispatched for next-morning cold delivery between 7:00 AM and 11:00 AM to keep your dairy crisp and cold.
-3. Shipping Charges: Flat shipping rate of Rs. 200 applies on orders below Rs. 2,500. Orders of Rs. 2,500 or more qualify for completely FREE shipping.
-4. Packaging: All butter, cream, and ghee are packed in food-grade, leak-proof, insulated thermal containers with ice packs during transit.`,
+1. Delivery Coverage: We provide reliable delivery across the city and surrounding areas.
+2. Timings: Orders placed before 4:00 PM are dispatched for next-morning delivery between 7:00 AM and 11:00 AM.
+3. Shipping Charges: Flat delivery rate of Rs. 200 applies. Orders above Rs. 5,000 qualify for completely FREE delivery.
+4. Packaging: All products are carefully packed in food-grade, leak-proof packaging to preserve quality during transit.`,
     },
     returns: {
       title: "Return & Refund Policy",

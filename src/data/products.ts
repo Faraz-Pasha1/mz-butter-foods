@@ -239,9 +239,9 @@ export const products: Product[] = [
     name: "Black Chocolate Chip",
     category: "chocolate",
     categoryLabel: "Chocolate & Chip",
-    tagline: "Rich premium dark cocoa chocolate chips for gourmet baking",
-    shortDescription: "Premium dark chocolate chips crafted with rich cocoa solids. Holds its shape in high-heat baking while delivering intense cocoa indulgence.",
-    fullDescription: "Mz Black Chocolate Chips are crafted specifically for passionate bakers, confectioners, and dessert artisans. With rich cocoa solids and a balanced melt profile, they deliver rich chocolate taste in cookies, brownies, cakes, and artisanal pastries.",
+    tagline: "Rich and indulgent Black Chocolate Chips, crafted with quality cocoa for a deep chocolate flavour and smooth texture.",
+    shortDescription: "Rich and indulgent Black Chocolate Chips, crafted with quality cocoa for a deep chocolate flavour and smooth texture.",
+    fullDescription: "Our Back Chocolate Chips deliver a rich cocoa flavour and smooth chocolate taste, making them perfect for baking and confectionery. An ideal choice for cookies, brownies, cakes, muffins, desserts, and professional bakery applications.",
     images: [
       "/images/Chocolate chip.webp",
       "/images/Chocolate chip.webp",
@@ -257,25 +257,31 @@ export const products: Product[] = [
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Crafted with premium dark cocoa solids.",
-      "Bake-stable formula that retains distinct morsel shape.",
-      "100% Free of artificial preservatives.",
-      "Available in 1kg retail packs and 25kg commercial bulk sacks."
+      "Rich Cocoa Flavour: Deep and delicious chocolate taste",
+      "Quality Ingredients: Carefully selected for consistent quality.",
+      "Versatile Baking: Ideal for cookies, brownies, cakes, and muffins.",
+      "Multiple Applications: Perfect for toppings, fillings, and dessert decoration."
     ],
     benefits: [
-      "Rich in natural cocoa antioxidants.",
-      "Superior melt and texture in bakery recipes.",
-      "Commercial-grade consistency for professional and home bakers."
+      "Antioxidant Content: Cocoa contains naturally occurring antioxidants called flavonoids..",
+      "Source of Energy: Provides energy through its carbohydrate and fat content.",
+      "Mineral Content: Cocoa naturally contains minerals such as iron, magnesium, and copper.",
+      "Cocoa Goodness: Offers naturally occurring cocoa compounds that contribute to its nutritional value."
     ],
     uses: [
-      "Classic chocolate chip cookies, fudge brownies, and muffins.",
-      "Fold into waffles, pancakes, and ice cream sundaes.",
-      "Melt smoothly for chocolate ganache, dipping, and cake drizzle."
+      "Perfect for baking chocolate chip cookies, brownies, muffins, cakes, and delicious pastries.",
+      "Ideal for melting into chocolate sauces, dessert fillings, and confectionery creations.",
+      "Excellent for topping ice creams, waffles, pancakes, and other sweet treats.",
+      "A versatile choice for professional bakeries, cafés, chocolatiers, and home baking."
     ],
     faqs: [
       {
-        question: "Are these bake-stable?",
-        answer: "Yes, Mz Black Chocolate Chips are formulated to hold their shape beautifully through high oven temperatures while melting deliciously on the palate."
+        question: "Does Black Chocolate Chip contain palm oil?",
+        answer: "Please refer to the product ingredient list for accurate information about palm oil and other vegetable fats. Our ingredient information is provided to help customers make informed choices."
+      },
+      {
+        question: "How should Black Chocolate Chips be stored",
+        answer: "Store Dark Chocolate Chips at below 25°C in a cool, dry place, away from direct sunlight and moisture. Keep the packaging tightly sealed after opening to maintain freshness and quality."
       }
     ],
     landscapeBanner: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1600&q=80",
@@ -291,9 +297,9 @@ export const products: Product[] = [
     name: "White Chocolate Chip",
     category: "chocolate",
     categoryLabel: "Chocolate & Chip",
-    tagline: "Creamy whole milk white chocolate chips for luxurious confectionery",
-    shortDescription: "Smooth, velvety white chocolate chips made from rich milk solids and cocoa butter. Adds creamy sweetness and contrast to cookies and pastries.",
-    fullDescription: "Mz White Chocolate Chips offer an irresistible dairy creaminess and sweet vanilla finish. Ideal for red velvet cookies, blondies, festive confectionery, and artisanal cake decoration.",
+    tagline: "Add a touch of creamy sweetness and elegance to every creation.",
+    shortDescription: "Enjoy the smooth, creamy sweetness of White Chocolate Chips, perfect for adding a rich milky flavour to cookies, cakes, brownies, muffins, and desserts.",
+    fullDescription: "Crafted for delightful sweetness, our White Chocolate Chips combine a smooth, creamy taste with the richness of skimmed milk. Perfect for cookies, cakes, brownies, pastries, and desserts, they bring a delicious milky touch to every baking creation.",
     images: [
       "/images/White chip.jpeg",
       "/images/White chip.jpeg",
@@ -309,24 +315,31 @@ export const products: Product[] = [
     reviewsCount: 0,
     reviews: [],
     about: [
-      "Velvety smooth white chocolate morsels with whole milk solids.",
-      "Bake-stable texture that holds up in ovens and batters.",
-      "Available in 1kg retail packs and 25kg bulk commercial sacks.",
-      "Zero chemical aftertastes."
+      "Smooth & Creamy Taste: Delivers a delightful milky sweetness in every bite.",
+      "Skimmed Milk Goodness: Adds a rich, creamy character to white chocolate flavour.",
+      "Versatile Baking Ingredient: Perfect for cookies, cakes, brownies, muffins, and pastries.",
+      "Endless Dessert Creations: Ideal for baking, melting, toppings, fillings, and decoration."
     ],
     benefits: [
-      "Rich creamy dairy profile.",
-      "Striking visual contrast and creamy melt in baked goods."
+      "Energy Support: Provides energy through its carbohydrate and fat content",
+      "Calcium Contribution: Skimmed milk ingredients may provide calcium.",
+      "Protein Content: May contribute small amounts of milk protein.",
+      "Enjoyable Treat: Adds creamy sweetness to desserts and baked goods."
     ],
     uses: [
-      "Red velvet cookies, matcha brownies, and macadamia nut cookies.",
-      "Melted into creamy white chocolate glazes and dessert mousses.",
-      "Decorative topping for cakes, cupcakes, and dessert platters."
+      "Perfect for baking cookies, brownies, muffins, cakes, and delicious pastries with a creamy white chocolate touch.",
+      "Ideal for melting into dessert sauces, cake fillings, and confectionery creations.",
+      "Excellent for topping ice creams, waffles, pancakes, and other sweet treats.",
+      "A versatile choice for professional bakeries, cafés, chocolatiers, and home baking."
     ],
     faqs: [
       {
-        question: "What pack sizes are available?",
-        answer: "Available in convenient 1kg home packs and 25kg wholesale bulk sacks for bakeries and commercial production."
+        question: "Does White Chocolate Chip contain palm oil?",
+        answer: "Please refer to the product ingredient list for accurate information about palm oil and other vegetable fats. Our ingredient information is provided to help customers make informed choices.",
+      },
+      {
+        question: "How should White Chocolate Chips be stored?",
+        answer: "Store White Chocolate Chips at below 25°C in a cool, dry place, away from direct sunlight and moisture. Keep the packaging tightly sealed after opening to maintain freshness and quality.",
       }
     ],
     landscapeBanner: "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=1600&q=80",

@@ -254,7 +254,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 )}
               </div>
               <span className="text-xs text-amber-900/70 block mt-1">
-                Taxes included • 100% pure cold-chain fresh dairy
+                Taxes included • 100% pure fresh dairy
               </span>
             </div>
 
@@ -348,12 +348,12 @@ export default function ProductDetailPage({ params }: PageProps) {
             <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-amber-200/70 space-y-2 text-xs text-gray-700">
               <div className="flex items-center gap-2 font-bold text-[#29150B]">
                 <Truck className="w-4 h-4 text-amber-700" />
-                <span>Cold-Chain Delivery Information:</span>
+                <span>Delivery Information:</span>
               </div>
               <ul className="space-y-1.5 pl-6 list-disc text-gray-600">
-                <li>Dispatched in insulated thermal cooler containers with frozen ice-gel packs.</li>
+                <li>Carefully packaged in food-grade containers to ensure quality.</li>
                 <li>Orders before 4 PM delivered next morning between 7 AM – 11 AM.</li>
-                <li><strong>FREE Delivery</strong> on orders over Rs. 2,500 across city.</li>
+                <li><strong>FREE Delivery</strong> on orders over Rs. 5,000 across city.</li>
                 <li>Instant WhatsApp confirmation and live dispatch rider tracking.</li>
               </ul>
             </div>
@@ -521,8 +521,8 @@ export default function ProductDetailPage({ params }: PageProps) {
                     <p className="text-xs text-amber-100/70 mt-1">No artificial chemical essences or butter fragrances added.</p>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                    <h4 className="font-bold text-amber-300 text-sm">Cold-Chain Preserved</h4>
-                    <p className="text-xs text-amber-100/70 mt-1">Never heated beyond essential pasteurization thresholds.</p>
+                    <h4 className="font-bold text-amber-300 text-sm">Freshly Preserved</h4>
+                    <p className="text-xs text-amber-100/70 mt-1">Carefully processed to maintain peak natural freshness.</p>
                   </div>
                 </div>
               </div>
@@ -718,8 +718,8 @@ export default function ProductDetailPage({ params }: PageProps) {
                 <div className="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 mb-3 shadow-xs">
                   <Truck className="w-7 h-7" />
                 </div>
-                <h4 className="font-extrabold text-sm text-[#29150B]">Cold-Chain Transit</h4>
-                <p className="text-xs text-gray-500 mt-1">Chilled insulated packaging</p>
+                <h4 className="font-extrabold text-sm text-[#29150B]">Fast Delivery</h4>
+                <p className="text-xs text-gray-500 mt-1">Reliable doorstep delivery</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 mb-3 shadow-xs">

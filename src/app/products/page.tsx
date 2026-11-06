@@ -74,7 +74,7 @@ function ProductsContent() {
             Our Complete Product Collection
           </h1>
           <p className="text-sm sm:text-base text-gray-600 mt-3 max-w-2xl mx-auto leading-relaxed">
-            Every product is hand-crafted from 100% pure milk. Available in multiple pack sizes with direct cold-chain delivery.
+            Every product is hand-crafted from 100% pure milk. Available in multiple pack sizes with direct delivery.
           </p>
         </div>
 

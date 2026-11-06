@@ -16,7 +16,7 @@ export const WhatsAppFloating: React.FC = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Floating Prompt Pill */}
+      {/* Floating Prompt Pill
       <a
         href={whatsappUrl}
         target="_blank"
@@ -29,7 +29,7 @@ export const WhatsAppFloating: React.FC = () => {
       >
         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
         <span>Chat with MZ Butter &amp; Foods</span>
-      </a>
+      </a> */}
 
       {/* Main WhatsApp Floating Button */}
       <a
@@ -37,7 +37,7 @@ export const WhatsAppFloating: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Direct message to MZ Butter & Foods on WhatsApp"
-        className="relative group w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-2xl shadow-emerald-600/40 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
+        className="relative group w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-2xl shadow-emerald-600/40 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
       >
         {/* Pulse ring animation */}
         <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-25 group-hover:opacity-40" />

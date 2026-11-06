@@ -287,7 +287,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
             <div className="p-6 rounded-3xl bg-[#1C0E07] text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-amber-500/20">
               <div>
                 <span className="text-xs uppercase tracking-wider text-amber-400 font-bold block">
-                  Cold-Chain Delivery to Your Door
+                  Fresh Delivery to Your Door
                 </span>
                 <h4 className="text-lg font-black text-white mt-1">
                   Ready to make this delicious dish?

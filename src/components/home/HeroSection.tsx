@@ -195,7 +195,7 @@ export const HeroSection: React.FC = () => {
             )}
 
             {/* Slide Content Overlay */}
-            <div className="absolute inset-0 z-20 flex items-center">
+            <div className="absolute inset-0 z-20 flex items-start pt-10 sm:pt-14 lg:pt-16">
               <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
                 <div className="max-w-2xl text-left space-y-4">
                   {/* Category Tag */}
