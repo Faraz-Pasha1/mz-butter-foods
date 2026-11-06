@@ -80,13 +80,13 @@ export const OurProductsSection: React.FC = () => {
           </Link>
         </div>
 
-        {/* 4 Category Cards: Image with title under it */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        {/* 4 Category Cards: 2 cards in one line on mobile, 4 on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-8">
           {categories.map((cat, idx) => (
             <Link
               key={idx}
               href={cat.link}
-              className="group bg-white rounded-3xl border border-amber-100/80 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1.5"
+              className="group bg-white rounded-2xl sm:rounded-3xl border border-amber-100/80 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1.5"
             >
               {/* Image Container on Top */}
               <div className="relative aspect-4/3 w-full bg-amber-50 overflow-hidden">
@@ -94,30 +94,34 @@ export const OurProductsSection: React.FC = () => {
                   src={cat.image}
                   alt={cat.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 25vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                   unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-xs text-amber-900 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs">
-                  {cat.badge}
-                </span>
+                {cat.badge && (
+                  <span className="absolute top-2 sm:top-3 left-2 sm:left-3 bg-white/90 backdrop-blur-xs text-amber-900 text-[10px] sm:text-[11px] font-bold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-xs">
+                    {cat.badge}
+                  </span>
+                )}
               </div>
 
               {/* Title and Details Under the Image */}
-              <div className="p-5 flex flex-col flex-1 justify-between text-center bg-white">
+              <div className="p-3.5 sm:p-5 flex flex-col flex-1 justify-between text-center bg-white">
                 <div>
-                  <h3 className="text-2xl font-black text-[#29150B] group-hover:text-amber-700 transition-colors">
+                  <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#29150B] group-hover:text-amber-700 transition-colors">
                     {cat.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 mt-2 line-clamp-2 leading-relaxed">
-                    {cat.description}
-                  </p>
+                  {cat.description && (
+                    <p className="text-xs sm:text-sm text-gray-600 mt-1 sm:mt-2 line-clamp-2 leading-relaxed">
+                      {cat.description}
+                    </p>
+                  )}
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-amber-50 flex items-center justify-center gap-1.5 text-xs font-bold text-amber-700 group-hover:text-amber-800">
+                <div className="mt-2.5 sm:mt-4 pt-2 sm:pt-3 border-t border-amber-50 flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold text-amber-700 group-hover:text-amber-800">
                   <span>Explore {cat.title}</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </Link>

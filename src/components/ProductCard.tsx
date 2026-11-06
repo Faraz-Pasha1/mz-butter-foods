@@ -149,9 +149,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {/* Button of Options */}
           <div className="mb-3">
             {isButter ? (
-              <div className="grid grid-cols-2 gap-2">
-                {/* Weight Options (1kg / 10kg) */}
-                <div>
+              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
+                {/* Weight Options (1kg / 10kg) - 2 cols */}
+                <div className="col-span-2">
                   <div className="text-[10px] uppercase font-bold text-gray-500 mb-1 text-center tracking-wider">
                     Weight
                   </div>
@@ -172,7 +172,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                             });
                             if (matched) setSelectedVariant(matched);
                           }}
-                          className={`text-xs py-1.5 px-1 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                          className={`text-xs py-1.5 px-0.5 rounded-lg font-bold transition-all text-center cursor-pointer ${
                             isSelected
                               ? "bg-amber-600 text-white shadow-xs"
                               : "text-amber-900/80 hover:bg-amber-100/80"
@@ -185,8 +185,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                   </div>
                 </div>
 
-                {/* Salted / Unsalted Options */}
-                <div>
+                {/* Salted / Unsalted Options - 3 cols for full text fit */}
+                <div className="col-span-3">
                   <div className="text-[10px] uppercase font-bold text-gray-500 mb-1 text-center tracking-wider">
                     Type
                   </div>
@@ -207,7 +207,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                             });
                             if (matched) setSelectedVariant(matched);
                           }}
-                          className={`text-xs py-1.5 px-1 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                          className={`text-[11px] sm:text-xs py-1.5 px-1 rounded-lg font-bold transition-all text-center cursor-pointer whitespace-nowrap tracking-tight ${
                             isSelected
                               ? "bg-amber-600 text-white shadow-xs"
                               : "text-amber-900/80 hover:bg-amber-100/80"

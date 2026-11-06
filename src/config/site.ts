@@ -4,8 +4,8 @@ export const siteConfig = {
   tagline: "Purity You Can Taste, Tradition You Can Trust",
   description: "Artisanal churned butter, velvet fresh dairy cream, and traditional fragrant desi ghee made with 100% pure milk. Farm fresh, zero preservatives.",
   // Official international WhatsApp number without '+', spaces, or dashes
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923343409990",
-  phone: "0334 3409990",
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923319099009",
+  phone: "+92 331 9099009",
   email: "mzbutterfoods.info@gmail.com",
   address: "Karachi, Pakistan",
   openingHours: "Mon - Sat: 8:00 AM - 9:00 PM (Fresh morning delivery dispatched by 7 AM)",
@@ -16,7 +16,7 @@ export const siteConfig = {
   socials: {
     facebook: "https://www.facebook.com/profile.php?id=61595667909781",
     instagram: "https://www.instagram.com/mz_foods01/",
-    whatsapp: "https://wa.me/923343409990",
+    whatsapp: "https://wa.me/923319099009",
   },
   navLinks: [
     { label: "Home", href: "/" },

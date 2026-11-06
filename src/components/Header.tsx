@@ -177,7 +177,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
               href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello MZ Butter & Foods! I would like to place an order or inquire about your products.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              title="Chat with MZ Butter & Foods on WhatsApp (03343409990)"
+              title="Chat with MZ Butter & Foods on WhatsApp (+92 331 9099009)"
               aria-label="Direct message to MZ Butter & Foods on WhatsApp"
               className="relative p-2.5 rounded-full text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors cursor-pointer flex items-center justify-center group"
             >

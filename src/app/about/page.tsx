@@ -90,98 +90,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 4. Our Mission Section */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Left Side: Big Heading of Mission with Background Image */}
-          <div className="lg:col-span-5 relative rounded-3xl overflow-hidden shadow-xl min-h-[340px] flex items-end p-8 border border-amber-500/30">
-            <Image
-              src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80"
-              alt="Our Mission background"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-            <div className="relative z-10">
-              <span className="text-xs uppercase tracking-widest text-amber-400 font-bold block mb-1">
-                Core Purpose
-              </span>
-              <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-                Our Mission
-              </h2>
-            </div>
-          </div>
-
-          {/* Right Side: Mission Details */}
-          <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-md flex flex-col justify-center space-y-4">
-            <h3 className="text-2xl font-black text-[#29150B]">
-              Restoring Uncompromising Integrity to Every Breakfast Table
-            </h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              Our mission is to lead Pakistan&apos;s clean food revolution by providing authentic, unadulterated dairy products directly from local pasture farms to families. We exist to protect consumers from deceptive industrial processing, hydrogenated fats, and synthetic additives.
-            </p>
-            <div className="space-y-2.5 pt-2">
-              {[
-                "Preserve authentic slow-simmering and churn traditions.",
-                "Guarantee 100% traceability from trusted pasture farms.",
-                "Provide doorstep delivery that protects natural freshness.",
-                "Support fair compensation and sustainable care for dairy cattle.",
-              ].map((m, idx) => (
-                <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-800 font-medium">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>{m}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+      {/* 4. Our Mission & Vision Sections */}
+      <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        {/* Our Mission */}
+        <div className="bg-white rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-md space-y-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-[#29150B] font-serif tracking-tight">
+            Our Mission
+          </h2>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-normal">
+            Our mission is to lead Pakistan&apos;s clean food revolution by providing authentic, unadulterated dairy products directly from local pasture farms to families. We exist to protect consumers from deceptive industrial processing, hydrogenated fats, and synthetic additives.
+          </p>
         </div>
-      </section>
 
-      {/* 5. Our Vision Section */}
-      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Left Side: Big Heading of Vision with Background Image */}
-          <div className="lg:col-span-5 relative rounded-3xl overflow-hidden shadow-xl min-h-[340px] flex items-end p-8 border border-amber-500/30">
-            <Image
-              src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=80"
-              alt="Our Vision background"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-            <div className="relative z-10">
-              <span className="text-xs uppercase tracking-widest text-amber-400 font-bold block mb-1">
-                The Future
-              </span>
-              <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-                Our Vision
-              </h2>
-            </div>
-          </div>
-
-          {/* Right Side: Vision Details */}
-          <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-md flex flex-col justify-center space-y-4">
-            <h3 className="text-2xl font-black text-[#29150B]">
-              Becoming the Benchmark of Pure Artisanal Food Across the Region
-            </h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              Our vision is to be a global leader in the dairy industry, recognized for our unwavering commitment to quality, innovation, and customer satisfaction. We aim to penetrate new international markets by forming strategic partnerships, adapting to diverse consumer preferences, and adhering to global quality and safety standards.
-            </p>
-            <div className="space-y-2.5 pt-2">
-              {[
-                "Setting the regional gold standard for 82% butterfat creamery butter.",
-                "Educating generations on the holistic health benefits of traditional desi ghee.",
-                "Fostering zero-waste, eco-conscious cold packaging and glass container recycling.",
-              ].map((v, idx) => (
-                <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-800 font-medium">
-                  <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
-                  <span>{v}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Our Vision */}
+        <div className="bg-white rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-md space-y-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-[#29150B] font-serif tracking-tight">
+            Our Vision
+          </h2>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-normal">
+            Our vision is to be a global leader in the dairy industry, recognized for our unwavering commitment to quality, innovation, and customer satisfaction. We aim to penetrate new international markets by forming strategic partnerships, adapting to diverse consumer preferences, and adhering to global quality and safety standards.
+          </p>
         </div>
       </section>
 
