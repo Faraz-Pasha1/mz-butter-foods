@@ -119,25 +119,25 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
 
       {/* Product Content Details */}
-      <div className="p-4 flex-1 flex flex-col justify-between">
+      <div className="p-2.5 sm:p-4 flex-1 flex flex-col justify-between">
         <div>
           {/* Centered Title */}
           <Link href={`/products/${product.slug || product.id}`}>
-            <h3 className="text-center font-extrabold text-gray-900 text-lg sm:text-xl hover:text-amber-700 transition-colors line-clamp-1">
+            <h3 className="text-center font-extrabold text-gray-900 text-sm sm:text-lg hover:text-amber-700 transition-colors line-clamp-1">
               {product.name}
             </h3>
           </Link>
-          <p className="text-center text-sm sm:text-[15px] text-amber-900/80 line-clamp-2 mt-1 italic leading-snug">
+          <p className="text-center text-xs sm:text-[15px] text-amber-900/80 line-clamp-1 sm:line-clamp-2 mt-0.5 sm:mt-1 italic leading-snug">
             {product.tagline}
           </p>
 
           {/* Centered Price with strike-through original price */}
-          <div className="mt-2.5 flex items-center justify-center gap-2">
-            <span className="text-center font-black text-amber-700 text-lg sm:text-xl">
+          <div className="mt-2 sm:mt-2.5 flex items-center justify-center gap-1.5 sm:gap-2">
+            <span className="text-center font-black text-amber-700 text-base sm:text-xl">
               Rs. {selectedVariant.price.toLocaleString()}
             </span>
             {selectedVariant.originalPrice && (
-              <span className="text-xs sm:text-sm text-gray-400 line-through">
+              <span className="text-[11px] sm:text-sm text-gray-400 line-through">
                 Rs. {selectedVariant.originalPrice.toLocaleString()}
               </span>
             )}
@@ -145,13 +145,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
 
         {/* Action Controls Section */}
-        <div className="mt-4 pt-3 border-t border-amber-100">
+        <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-amber-100">
           {/* Button of Options */}
-          <div className="mb-3">
+          <div className="mb-2.5 sm:mb-3">
             {isButter ? (
-              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
-                {/* Weight Options (1kg / 10kg) - 2 cols */}
-                <div className="col-span-2">
+              <div className="flex flex-col gap-1.5 sm:grid sm:grid-cols-5 sm:gap-2">
+                {/* Weight Options (1kg / 10kg) - 2 cols on desktop */}
+                <div className="sm:col-span-2">
                   <div className="text-[10px] uppercase font-bold text-gray-500 mb-1 text-center tracking-wider">
                     Weight
                   </div>
@@ -172,7 +172,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                             });
                             if (matched) setSelectedVariant(matched);
                           }}
-                          className={`text-xs py-1.5 px-0.5 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                          className={`text-[11px] sm:text-xs py-1.5 px-0.5 rounded-lg font-bold transition-all text-center cursor-pointer ${
                             isSelected
                               ? "bg-amber-600 text-white shadow-xs"
                               : "text-amber-900/80 hover:bg-amber-100/80"
@@ -185,8 +185,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                   </div>
                 </div>
 
-                {/* Salted / Unsalted Options - 3 cols for full text fit */}
-                <div className="col-span-3">
+                {/* Salted / Unsalted Options - 3 cols on desktop */}
+                <div className="sm:col-span-3">
                   <div className="text-[10px] uppercase font-bold text-gray-500 mb-1 text-center tracking-wider">
                     Type
                   </div>
@@ -233,16 +233,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                       key={variant.id}
                       type="button"
                       onClick={() => setSelectedVariant(variant)}
-                      className={`text-xs py-1.5 px-2 rounded-lg font-bold transition-all text-center cursor-pointer ${
+                      className={`text-[11px] sm:text-xs py-1.5 sm:py-2 px-1.5 rounded-lg font-bold transition-all text-center cursor-pointer ${
                         isSelected
                           ? "bg-amber-600 text-white shadow-xs"
                           : "text-amber-900/80 hover:bg-amber-100/80"
                       }`}
                     >
                       <span>{variant.label}</span>
-                      <span className="text-[10px] block opacity-85 font-normal">
-                        Rs. {variant.price.toLocaleString()}
-                      </span>
                     </button>
                   );
                 })}
@@ -251,26 +248,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
 
           {/* Quantity Controls and Add to Cart Button */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
             {/* Left Small Round Button: Decrease */}
             <button
               type="button"
               onClick={handleDecrease}
               aria-label="Decrease quantity"
-              className="w-9 h-9 rounded-full shrink-0 border border-gray-300 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold flex items-center justify-center transition-colors cursor-pointer shadow-xs active:scale-95"
+              className="w-7 h-7 sm:w-9 sm:h-9 rounded-full shrink-0 border border-gray-300 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold flex items-center justify-center transition-colors cursor-pointer shadow-xs active:scale-95"
             >
-              <Minus className="w-3.5 h-3.5" />
+              <Minus className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
             </button>
 
             {/* Middle: Add to Cart Button with Quantity indicator */}
             <button
               type="button"
               onClick={handleAddToCart}
-              className="group/btn flex-1 py-2 px-3 rounded-full bg-gray-200 hover:bg-black text-gray-900 hover:text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-xs hover:shadow-md transition-all duration-200 cursor-pointer active:scale-98"
+              className="group/btn flex-1 py-1.5 sm:py-2 px-1 sm:px-3 rounded-full bg-gray-200 hover:bg-black text-gray-900 hover:text-white font-bold text-[11px] sm:text-xs flex items-center justify-center gap-1 sm:gap-1.5 shadow-xs hover:shadow-md transition-all duration-200 cursor-pointer active:scale-98 min-w-0"
             >
-              <ShoppingCart className="w-3.5 h-3.5" />
-              <span>Add to Cart</span>
-              <span className="bg-black/10 group-hover/btn:bg-white/20 text-inherit px-1.5 py-0.5 rounded-full text-[11px] font-mono transition-colors">
+              <ShoppingCart className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
+              <span className="truncate">Add to Cart</span>
+              <span className="bg-black/10 group-hover/btn:bg-white/20 text-inherit px-1 sm:px-1.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-mono shrink-0">
                 {quantity}
               </span>
             </button>
@@ -280,9 +277,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               type="button"
               onClick={handleIncrease}
               aria-label="Increase quantity"
-              className="w-9 h-9 rounded-full shrink-0 border border-gray-300 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold flex items-center justify-center transition-colors cursor-pointer shadow-xs active:scale-95"
+              className="w-7 h-7 sm:w-9 sm:h-9 rounded-full shrink-0 border border-gray-300 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold flex items-center justify-center transition-colors cursor-pointer shadow-xs active:scale-95"
             >
-              <Plus className="w-3.5 h-3.5" />
+              <Plus className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
             </button>
           </div>
         </div>

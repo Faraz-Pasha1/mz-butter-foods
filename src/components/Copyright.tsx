@@ -14,11 +14,11 @@ export const Copyright: React.FC = () => {
             {siteConfig.tagline}
           </p>
         </div>
-        <div className="flex items-center gap-1.5 text-[11px] text-amber-200/70">
+        {/* <div className="flex items-center gap-1.5 text-[11px] text-amber-200/70">
           <span>Crafted with</span>
           <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 inline" />
           <span>for dairy lovers • 100% Purity Certified</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

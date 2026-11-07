@@ -69,7 +69,7 @@ export const CreamSection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-4/3 sm:aspect-square bg-amber-100">
               <Image
-                src="/images/butterbenefitssection.jpg"
+                src="/images/butterbenefitssection.webp"
                 alt="Mz butter"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

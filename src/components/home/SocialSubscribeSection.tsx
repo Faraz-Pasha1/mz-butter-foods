@@ -52,7 +52,7 @@ export const SocialSubscribeSection: React.FC = () => {
               {/* Facebook Page Banner Image with QR Overlay */}
               <div className="relative rounded-2xl overflow-hidden aspect-16/9 bg-blue-50 border border-blue-100">
                 <Image
-                  src="/images/Hero1.jfif"
+                  src="/images/Hero1.webp"
                   alt="MZ Butter & Foods Facebook community"
                   fill
                   className="object-cover"
@@ -127,7 +127,7 @@ export const SocialSubscribeSection: React.FC = () => {
               {/* Instagram Feed Image with QR Overlay */}
               <div className="relative rounded-2xl overflow-hidden aspect-16/9 bg-pink-50 border border-pink-100">
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/logo.webp"
                   alt="Mz Butter & foods Instagram feed"
                   fill
                   className="object-cover"

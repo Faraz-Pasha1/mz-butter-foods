@@ -11,12 +11,12 @@ const certificates: CertificateItem[] = [
   {
     id: "halal",
     title: "International Halal Certification",
-    image: "/images/certificate-halal.jpeg",
+    image: "/images/certificate-halal.webp",
   },
   {
     id: "iso",
     title: "Food Safety Management System ISO 22000:2018",
-    image: "/images/certificate-iso.jpeg",
+    image: "/images/certificate-iso.webp",
   },
 ];
 

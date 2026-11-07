@@ -2,9 +2,9 @@
 
 import React from "react";
 import { siteConfig } from "@/config/site";
-import { X, ShieldCheck, Truck, RefreshCw } from "lucide-react";
+import { X, ShieldCheck, Truck, RefreshCw, Lock } from "lucide-react";
 
-export type PolicyType = "terms" | "shipping" | "returns" | null;
+export type PolicyType = "terms" | "shipping" | "returns" | "privacy" | null;
 
 interface PolicyModalProps {
   policyType: PolicyType;
@@ -25,6 +25,8 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ policyType, onClose })
         return <Truck className="w-6 h-6 text-amber-600" />;
       case "returns":
         return <RefreshCw className="w-6 h-6 text-amber-600" />;
+      case "privacy":
+        return <Lock className="w-6 h-6 text-amber-600" />;
       default:
         return null;
     }

@@ -1,14 +1,14 @@
 export const siteConfig = {
   name: "MZ Butter & Foods",
   shortName: "MZ Butter",
-  tagline: "Purity You Can Taste, Tradition You Can Trust",
+  tagline: "Better Ingredients , Better Products",
   description: "Artisanal churned butter, velvet fresh dairy cream, and traditional fragrant desi ghee made with 100% pure milk. Farm fresh, zero preservatives.",
   // Official international WhatsApp number without '+', spaces, or dashes
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923319099009",
   phone: "+92 331 9099009",
   email: "mzbutterfoods.info@gmail.com",
   address: "Karachi, Pakistan",
-  openingHours: "Mon - Sat: 8:00 AM - 9:00 PM (Fresh morning delivery dispatched by 7 AM)",
+  openingHours: "Mon - Sun: 8:00 AM - 9:00 PM ",
   currency: "Rs.",
   freeShippingThreshold: 5000,
   defaultShippingFee: 200,
@@ -29,12 +29,23 @@ export const siteConfig = {
   policies: {
     terms: {
       title: "Terms & Conditions",
-      content: `Welcome to Mz Butter & foods. By browsing or placing an order through our website and WhatsApp channels, you agree to our terms of service:
-      
-1. Product Purity & Freshness: We guarantee that all our dairy products (Butter, Fresh Cream, Desi Ghee, Chocolate Spreads) are prepared from 100% pure milk without synthetic preservatives or adulterants.
-2. WhatsApp Ordering: Orders submitted through our cart generate an official WhatsApp prefilled invoice. The order is officially confirmed once you send the WhatsApp message and our delivery dispatcher acknowledges your details.
-3. Pricing & Taxes: All prices listed on the website are in Pakistani Rupees (Rs.) and are inclusive of standard local packaging.
-4. Perishable Goods Handling: Dairy products must be refrigerated immediately upon arrival. Mz Butter & foods cannot be held responsible for spoilage due to improper customer storage post-handover.`,
+      content: `By browsing or placing an order through our website and WhatsApp channels, you agree to our Terms of Service:
+
+• Product Quality & Freshness: We are committed to providing high quality, fresh, and carefully prepared food products. All our products are handled and packed with care, following appropriate quality and food safety practices.
+
+• WhatsApp Ordering: Orders submitted through our website cart generate an official pre filled WhatsApp order message. An order is considered confirmed once you send the WhatsApp message and our team acknowledges and confirms your order details.
+
+• Pricing & Taxes: All prices listed on our website are in Pakistani Rupees (Rs.). Prices are subject to change without prior notice. Any applicable delivery charges will be communicated during order confirmation.
+
+• Product Storage & Handling: Customers are responsible for following the recommended storage and handling instructions provided for each product. Products requiring refrigeration or frozen storage must be stored appropriately upon delivery. Company is not responsible for spoilage resulting from improper storage or handling after delivery.
+
+• Product Information: We make every effort to ensure that product descriptions, images, and specifications displayed on our website are accurate. Minor variations in product appearance or packaging may occur.
+
+• Order Changes & Cancellation: Any request to modify or cancel an order must be communicated to our team as early as possible. Changes may not be possible once an order has been processed or dispatched.
+
+• Customer Information: Customers are responsible for providing accurate contact details and delivery addresses to ensure smooth order processing and delivery.
+
+• Policy Updates: MZ Butter & Foods reserves the right to update these Terms of Service at any time. Any changes will be published on our website.`,
     },
     shipping: {
       title: "Shipping & Delivery Policy",
@@ -47,11 +58,42 @@ export const siteConfig = {
     },
     returns: {
       title: "Return & Refund Policy",
-      content: `We stand by the supreme quality of our products with our 100% Purity Guarantee:
+      content: `Incorrect or damaged products must be reported within 7 days of delivery.
 
-1. Quality Issues: If your package arrives warm, compromised, or damaged during transit, please take a photo and message us on WhatsApp within 3 hours of delivery.
-2. Instant Replacement or Refund: We will gladly dispatch an immediate replacement batch free of cost or refund your payment via bank transfer/JazzCash/EasyPaisa.
-3. Taste & Freshness: Because dairy products are perishable, we do not accept returns for change of mind once the tamper-evident seal is broken, unless there is a verifiable quality discrepancy.`,
+Returns or exchanges are accepted only if the product seal remains unopened and the product is unused. Delivery charges may apply.
+
+Refunds or exchanges are subject to product inspection and approval.
+
+Contact our customer support within 7 days of delivery with your order number and reason for return. Our team will guide you through the process.
+
+We are committed to treating every customer with honesty, fairness, and respect.`,
+    },
+    privacy: {
+      title: "Privacy Policy",
+      content: `At MZ Butter & Foods, we respect your privacy and are committed to protecting the personal information you share with us through www.mzbutterfoods.com.
+
+Information We Collect:
+We may collect information such as your name, email address, phone number, delivery or business details, and any other information you provide through our contact forms, enquiries, or customer feedback.
+
+How We Use Your Information:
+We use your information to:
+• Respond to enquiries and provide customer support.
+• Process and manage orders and business requests.
+• Improve our products, services, and website.
+• Share product updates, offers, or promotional information where appropriate.
+
+Cookies:
+Our website may use cookies to improve browsing experience, understand website traffic, and enhance website functionality. You can manage or disable cookies through your browser settings.
+
+Information Security:
+We take reasonable measures to protect your personal information against unauthorised access, misuse, or disclosure. However, no online transmission or storage method can be guaranteed to be completely secure.
+
+Sharing of Information:
+We do not sell or rent your personal information. We may share it with trusted service providers when necessary to operate our website or fulfil your requests, subject to appropriate safeguards.
+
+Policy Updates & Contact:
+We may update this Privacy Policy from time to time. Any changes will be posted on this page.
+For privacy-related questions, please contact us through the contact details provided on www.mzbutterfoods.com.`,
     },
   },
 };

@@ -10,28 +10,28 @@ export const ProductTestSection: React.FC = () => {
       title: "Perfect Whipping & Peak Texture",
       desc: "Whip up smooth, stable peaks effortlessly to give your desserts a professional, bakery-style finish every time.",
       icon: <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/Cream1.jpg",
+      image: "/images/Cream1.webp",
       alt: "Arwa Whipping Cream for perfect bakery results",
     },
     {
       title: "Rich & Velvety Taste",
       desc: " Indulge in a rich, velvety consistency that melts in your mouth and elevates the flavor of any sweet creation.     ",
       icon: <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/cream2.jpg",
+      image: "/images/cream2.webp",
       alt: "Smooth and creamy pure churned butter",
     },
     {
       title: "Precision Decorating",
       desc: "Perfect for piping crisp borders, rosettes, and intricate designs on cakes, tarts, and pastries with absolute ease.A delightful choice for home bakers and professionals creating memorable desserts.",
       icon: <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/cream3.jpg",
+      image: "/images/cream3.webp",
       alt: "Pure cream trusted in commercial and home kitchens",
     },
     {
       title: "Crafted for Excellence",
       desc: "A reliable choice for home bakers and professional pastry chefs alike, designed to deliver exceptional baking resultsChoose quality and care for your everyday baking and special occasions.",
       icon: <HeartPulse className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/cream4.jpg",
+      image: "/images/cream4.webp",
       alt: "Care in every pack of fresh chilled butter",
     },
   ];
@@ -52,7 +52,7 @@ export const ProductTestSection: React.FC = () => {
           <div className="lg:col-span-5 relative flex flex-col">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-amber-100 flex-1 min-h-[260px] sm:min-h-[360px] lg:min-h-full">
               <Image
-                src="/images/arwa whipping cream.jpeg"
+                src="/images/arwa whipping cream.webp"
                 alt="Mz Butter & foods mixed dairy products assortment"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"

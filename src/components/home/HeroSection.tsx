@@ -40,7 +40,7 @@ const slides: SlideData[] = [
   // Slide 1: All Products
   {
     type: "image",
-    mediaUrl: "/images/Hero1.jfif",
+    mediaUrl: "/images/Hero1.webp",
     categoryTag: "All Dairy & Sweets",
     title: "Pure, Simple Butter Crafted for Professionals",
     subtitle: "",
@@ -52,7 +52,7 @@ const slides: SlideData[] = [
   // Slide 2: Butter Slide
   {
     type: "image",
-    mediaUrl: "/images/hero section 2.jfif",
+    mediaUrl: "/images/hero section 2.webp",
     categoryTag: "Butter",
     title: "Pure, Simple Butter Crafted for Professionals",
     subtitle: "",
@@ -62,7 +62,7 @@ const slides: SlideData[] = [
   // Slide 3: Cream Slide
   {
     type: "image",
-    mediaUrl: "/images/Desi Ghee.jpeg",
+    mediaUrl: "/images/Desi Ghee.webp",
     categoryTag: "Desi Ghee",
     title: "Desi Ghee for Rich Aroma & Authentic Taste",
     subtitle: "",
@@ -72,7 +72,7 @@ const slides: SlideData[] = [
   // Slide 4: Desi Ghee Slide
   {
     type: "image",
-    mediaUrl: "/images/arwa cream.jpg",
+    mediaUrl: "/images/arwa cream.webp",
     categoryTag: "Cream",
     title: "Pure Creamy Perfection for Your Sweet Creations",
     subtitle: "",
@@ -82,7 +82,7 @@ const slides: SlideData[] = [
   // Slide 5: Chocolate & Chip Slide
   {
     type: "image",
-    mediaUrl: "/images/chocolates.jpg",
+    mediaUrl: "/images/chocolates.webp",
     categoryTag: "Chocolate",
     title: "Premium Chocolates for Master Bakers",
     subtitle: "",

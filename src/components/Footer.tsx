@@ -53,10 +53,10 @@ export const Footer: React.FC = () => {
               <p className="text-xs text-amber-100/70 leading-relaxed max-w-sm">
                 Pure sweet cream butter, dense velvet fresh cream, and traditional slow-simmered danedar desi ghee. 100% farm milk, zero adulterants, fresh delivery directly to your home.
               </p>
-              <div className="pt-2 flex items-center gap-2 text-xs text-amber-300">
+              {/* <div className="pt-2 flex items-center gap-2 text-xs text-amber-300">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>100% Natural Grass-Fed Dairy</span>
-              </div>
+              </div> */}
             </div>
 
             {/* 2nd Section: Heading "Shop" (Product titles direct to product description page) */}
@@ -117,7 +117,15 @@ export const Footer: React.FC = () => {
                     onClick={() => setActivePolicy("returns")}
                     className="text-amber-100/80 hover:text-amber-300 transition-colors flex items-center gap-2 cursor-pointer text-left"
                   >
-                    <span>• Return &amp; Refund Purity Policy</span>
+                    <span>• Return &amp; Refund Policy</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => setActivePolicy("privacy")}
+                    className="text-amber-100/80 hover:text-amber-300 transition-colors flex items-center gap-2 cursor-pointer text-left"
+                  >
+                    <span>• Privacy Policy</span>
                   </button>
                 </li>
                 <li className="pt-2">
@@ -128,9 +136,9 @@ export const Footer: React.FC = () => {
                     <Link href="/careers" className="hover:text-amber-400 transition-colors">
                       • Careers
                     </Link>
-                    <Link href="/about" className="hover:text-amber-400 transition-colors">
+                    {/* <Link href="/about" className="hover:text-amber-400 transition-colors">
                       • Our Heritage
-                    </Link>
+                    </Link> */}
                   </div>
                 </li>
               </ul>
@@ -203,7 +211,7 @@ export const Footer: React.FC = () => {
                 <li className="flex items-start gap-2.5">
                   <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-white block">Farm &amp; Facility:</strong>
+                    <strong className="text-white block">Facility:</strong>
                     {siteConfig.address}
                   </span>
                 </li>

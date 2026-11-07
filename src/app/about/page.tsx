@@ -138,8 +138,8 @@ export default function AboutPage() {
             </div>
             <div className="bg-white p-6 rounded-2xl border border-amber-100 shadow-xs text-center flex flex-col items-center">
               <ShieldCheck className="w-10 h-10 text-blue-600 mb-3" />
-              <h4 className="font-extrabold text-sm text-[#29150B]">Hygienic Cold Churn</h4>
-              <p className="text-xs text-gray-500 mt-1">Sealed stainless-steel processing</p>
+              <h4 className="font-extrabold text-sm text-[#29150B]">Hygienic Process</h4>
+              <p className="text-xs text-gray-500 mt-1">Sealed & Hygienic processing</p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-amber-100 shadow-xs text-center flex flex-col items-center">
               <Truck className="w-10 h-10 text-purple-600 mb-3" />
@@ -158,24 +158,38 @@ export default function AboutPage() {
               Commercial Collaborations
             </span>
             <h3 className="text-3xl font-black text-[#29150B] mt-1">
-              Our Key Culinary Partners
+              Our Key Customers
             </h3>
             <p className="text-xs sm:text-sm text-gray-600 mt-2">
-              Trusted by top bakeries, patisseries, and dessert artisans who depend on our 82% butterfat consistency.
+              Trusted by top bakeries, patisseries, hotels, and food manufacturers who depend on our 100% pure dairy quality.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
             {partners.map((p) => (
               <div
                 key={p.id}
-                className="p-4 rounded-2xl bg-amber-50/50 border border-amber-100 text-center flex flex-col items-center hover:bg-amber-100/70 transition-colors"
+                className="group p-4 sm:p-5 rounded-2xl bg-white border border-amber-200/80 shadow-xs hover:shadow-xl hover:border-amber-400 transition-all duration-300 flex flex-col items-center justify-between hover:-translate-y-1"
               >
-                <div className="relative w-14 h-14 rounded-full overflow-hidden bg-white mb-2 shadow-xs">
-                  <Image src={p.image} alt={p.name} fill className="object-cover" unoptimized />
+                <div className="relative w-full h-24 sm:h-28 rounded-xl bg-[#FAF7F2] border border-amber-100/70 p-3 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                    unoptimized
+                  />
                 </div>
-                <h4 className="font-bold text-xs text-[#29150B] line-clamp-1">{p.name}</h4>
-                <span className="text-[10px] text-amber-800/80 line-clamp-1">{p.category}</span>
+                <div className="mt-3 text-center w-full">
+                  <h4 className="font-extrabold text-xs sm:text-sm text-[#29150B] line-clamp-1">
+                    {p.name}
+                  </h4>
+                  {p.category && (
+                    <span className="text-[10px] sm:text-[11px] text-amber-800/80 font-medium line-clamp-1 mt-0.5 block">
+                      {p.category}
+                    </span>
+                  )}
+                </div>
               </div>
             ))}
           </div>

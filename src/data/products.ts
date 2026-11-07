@@ -12,9 +12,9 @@ export const products: Product[] = [
     shortDescription: "Made from 100% grass-fed buffalo and cow milk cream, our premium dairy butter offers a naturally sweet taste, smooth creamy texture, and rich flavour, with no added emulsifiers or artificial additives.",
     fullDescription: "Our Pure Creamery Butter is crafted from fresh cow and buffalo milk cream, delivering a rich taste, smooth texture, and excellent performance for both home and professional kitchens. Carefully processed to maintain its natural dairy goodness, it is ideal for baking, cooking, pastries, croissants, and everyday spreading.",
     images: [
-      "/images/Butter salted 2.jpeg",
-      "/images/Butter salted 3.jpeg",
-      "/images/Butter salted 3.jpeg"
+      "/images/Butter salted 2.webp",
+      "/images/Butter salted 3.webp",
+      "/images/Butter salted 3.webp"
     ],
     price: 2150,
     originalPrice: 2450,
@@ -55,8 +55,8 @@ export const products: Product[] = [
         answer: "Available in both Unsalted and Salted variations to give you complete seasoning control over your culinary creations."
       }
     ],
-    landscapeBanner: "/images/productpagelandscape.jpg",
-    portraitFeature: "/images/productpageportraitpremium.jfif",
+    landscapeBanner: "/images/productpagelandscape.webp",
+    portraitFeature: "/images/productpageportraitpremium.webp",
     inStock: true,
     featured: true,
   },
@@ -72,9 +72,9 @@ export const products: Product[] = [
     shortDescription: "Our deliciously creamy butter, made from quality dairy cream to bring rich flavour, smooth texture, and everyday goodness to your breakfast table and favourite recipes.",
     fullDescription: "Our quality dairy butter is made from cow and buffalo milk cream, offering a smooth texture and delicious buttery flavour for everyday use. Carefully processed and hygienically packed, it is a versatile choice for cooking, spreading, sauces, and a variety of culinary applications in homes, restaurants, and commercial kitchens.",
     images: [
-      "/images/Butter unsalted 1.jpeg",
-      "/images/Butter unsalted 1.jpeg",
-      "/images/Butter unsalted 1.jpeg"
+      "/images/Butter unsalted 1.webp",
+      "/images/Butter unsalted 1.webp",
+      "/images/Butter unsalted 1.webp"
     ],
     price: 1850,
     originalPrice: 2150,
@@ -109,8 +109,8 @@ export const products: Product[] = [
         answer: "Unsalted is pure sweet cream butter, great for precise baking. Salted is lightly salted for daily breakfast and savory cooking."
       }
     ],
-    landscapeBanner: "/images/productpagelandscapebutter.jpg",
-    portraitFeature: "/images/productpageportrait.jpg",
+    landscapeBanner: "/images/productpagelandscapebutter.webp",
+    portraitFeature: "/images/productpageportrait.webp",
     inStock: true,
     featured: true,
   },
@@ -126,9 +126,9 @@ export const products: Product[] = [
     shortDescription: "Rich and creamy whipping cream, perfect for cakes, pastries, desserts, and decorative toppings. Ideal for bakeries, cafés, and home kitchens seeking smooth texture and delicious flavour. ",
     fullDescription: "Arwa Whipping Cream is a homogenized, non-dairy whipping cream designed to deliver a smooth texture, consistent performance, and excellent whipping results. Its creamy consistency makes it ideal for professional cake decoration, pastries, desserts, and bakery applications",
     images: [
-      "/images/arwa cream.jpg",
-      "/images/arwa whipping cream.jpeg",
-      "/images/arwa cream.jpg"
+      "/images/arwa cream.webp",
+      "/images/arwa whipping cream.webp",
+      "/images/arwa cream.webp"
     ],
     price: 550,
     originalPrice: 650,
@@ -169,8 +169,8 @@ export const products: Product[] = [
         answer: "Thaw the cream under refrigerated conditions before use. Whip the chilled cream using a clean mixing bowl and whisk at medium to high speed until it reaches your desired consistency and forms stable peak."
       }
     ],
-    landscapeBanner: "/images/arwa cream.jpg",
-    portraitFeature: "/images/arwa whipping cream.png",
+    landscapeBanner: "/images/arwa cream.webp",
+    portraitFeature: "/images/arwa whipping cream.webp",
     inStock: true,
     featured: true,
   },
@@ -186,9 +186,9 @@ export const products: Product[] = [
     shortDescription: "Cooked slowly over gentle flame from pure butter until water evaporates and milk solids caramelize to golden perfection. Perfect for traditional cooking, frying, parathas, and everyday Pakistani cuisine.",
     fullDescription: "Our Traditional Desi Ghee is slowly prepared from quality butter to develop its rich aroma, authentic taste, and signature granular texture. Carefully clarified to deliver traditional goodness, it is perfect for cooking, frying, baking, parathas, and traditional sweets.",
     images: [
-      "/images/Desi Ghee.jpeg",
-      "/images/Desi Ghee.jpeg",
-      "/images/Desi Ghee.jpeg"
+      "/images/Desi Ghee.webp",
+      "/images/Desi Ghee.webp",
+      "/images/Desi Ghee.webp"
     ],
     price: 2800,
     originalPrice: 3200,
@@ -284,8 +284,8 @@ export const products: Product[] = [
         answer: "Store Dark Chocolate Chips at below 25°C in a cool, dry place, away from direct sunlight and moisture. Keep the packaging tightly sealed after opening to maintain freshness and quality."
       }
     ],
-    landscapeBanner: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1600&q=80",
-    portraitFeature: "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=900&q=80",
+    landscapeBanner: "",
+    portraitFeature: "",
     inStock: true,
     featured: true,
   },
@@ -301,9 +301,9 @@ export const products: Product[] = [
     shortDescription: "Enjoy the smooth, creamy sweetness of White Chocolate Chips, perfect for adding a rich milky flavour to cookies, cakes, brownies, muffins, and desserts.",
     fullDescription: "Crafted for delightful sweetness, our White Chocolate Chips combine a smooth, creamy taste with the richness of skimmed milk. Perfect for cookies, cakes, brownies, pastries, and desserts, they bring a delicious milky touch to every baking creation.",
     images: [
-      "/images/White chip.jpeg",
-      "/images/White chip.jpeg",
-      "/images/White chip.jpeg"
+      "/images/White chip.webp",
+      "/images/White chip.webp",
+      "/images/White chip.webp"
     ],
     price: 900,
     originalPrice: 1050,
@@ -342,8 +342,8 @@ export const products: Product[] = [
         answer: "Store White Chocolate Chips at below 25°C in a cool, dry place, away from direct sunlight and moisture. Keep the packaging tightly sealed after opening to maintain freshness and quality.",
       }
     ],
-    landscapeBanner: "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=1600&q=80",
-    portraitFeature: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
+    landscapeBanner: "",
+    portraitFeature: "",
     inStock: true,
     featured: true,
   }

@@ -19,7 +19,7 @@ const reasons: ReasonCard[] = [
     number: "01",
     headline: "Farm Purity & Raw Quality",
     details: "We source rich, pure farm milk directly to preserve natural freshness, rich fat content, and authentic dairy flavor in every batch.",
-    image: "/images/whyChoose1.jpg",
+    image: "/images/whyChoose1.webp",
     icon: <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
   {
@@ -27,7 +27,7 @@ const reasons: ReasonCard[] = [
     number: "02",
     headline: "Slow Churning Excellence",
     details: "Combining heritage slow-churning techniques with modern precision to deliver unmatched rich texture, golden color, and superior aroma.",
-    image: "/images/whyChoose2.jpg",
+    image: "/images/whyChoose2.webp",
     icon: <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
   {
@@ -35,7 +35,7 @@ const reasons: ReasonCard[] = [
     number: "03",
     headline: "Uncompromised Safety & Quality",
     details: "Processed in state-of-the-art clean environments strictly aligned with food safety standards and 100% Halal compliance.",
-    image: "/images/whyChoose3.jpg",
+    image: "/images/whyChoose3.webp",
     icon: <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
   {
@@ -43,7 +43,7 @@ const reasons: ReasonCard[] = [
     number: "04",
     headline: "Commercial & Industrial Supply",
     details: "Engineered to meet the high-performance demands of food manufacturers, industrial bakeries, and food service providers with absolute consistency.",
-    image: "/images/whyChoose4.jpg",
+    image: "/images/whyChoose4.webp",
     icon: <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />,
   },
 ];

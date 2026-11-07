@@ -329,12 +329,12 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
             {otherRecipes.map((other) => (
               <Link
                 key={other.id}
                 href={`/recipes/${other.slug}`}
-                className="group bg-white rounded-2xl border border-amber-100 overflow-hidden shadow-xs hover:shadow-xl transition-all flex flex-col"
+                className="group bg-white rounded-xl sm:rounded-2xl border border-amber-100 overflow-hidden shadow-xs hover:shadow-xl transition-all flex flex-col"
               >
                 <div className="relative aspect-16/10 w-full overflow-hidden bg-amber-50">
                   <Image
@@ -345,16 +345,16 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
                     unoptimized
                   />
                 </div>
-                <div className="p-4 flex-1 flex flex-col justify-between">
+                <div className="p-2.5 sm:p-4 flex-1 flex flex-col justify-between">
                   <div>
-                    <h4 className="font-bold text-sm text-[#29150B] group-hover:text-amber-700 transition-colors line-clamp-1">
+                    <h4 className="font-bold text-xs sm:text-sm text-[#29150B] group-hover:text-amber-700 transition-colors line-clamp-1">
                       {other.title}
                     </h4>
-                    <p className="text-xs text-gray-500 mt-1 line-clamp-2">
+                    <p className="text-[11px] sm:text-xs text-gray-500 mt-0.5 sm:mt-1 line-clamp-1 sm:line-clamp-2">
                       {other.tagline}
                     </p>
                   </div>
-                  <div className="mt-3 pt-2 border-t border-amber-50 flex items-center justify-between text-[11px] text-gray-400">
+                  <div className="mt-2 sm:mt-3 pt-1.5 sm:pt-2 border-t border-amber-50 flex items-center justify-between text-[10px] sm:text-[11px] text-gray-400">
                     <span>{other.prepTime} prep</span>
                     <span className="text-amber-700 font-bold group-hover:translate-x-0.5 transition-transform">
                       Cook &rarr;

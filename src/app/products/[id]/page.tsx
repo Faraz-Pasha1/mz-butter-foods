@@ -258,34 +258,109 @@ export default function ProductDetailPage({ params }: PageProps) {
               </span>
             </div>
 
-            {/* Pack Size / Weight Selection */}
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
-                Select Pack Weight:
-              </label>
-              <div className="grid grid-cols-2 gap-3">
-                {product.variants.map((v) => {
-                  const isSelected = selectedVariant.id === v.id;
-                  return (
-                    <button
-                      key={v.id}
-                      type="button"
-                      onClick={() => setSelectedVariant(v)}
-                      className={`py-3 px-4 rounded-xl border text-left transition-all cursor-pointer ${
-                        isSelected
-                          ? "border-amber-600 bg-amber-600 text-white shadow-md shadow-amber-600/20"
-                          : "border-amber-200 bg-white hover:bg-amber-50 text-gray-800"
-                      }`}
-                    >
-                      <span className="block font-bold text-sm">{v.label}</span>
-                      <span className="text-xs opacity-90 block mt-0.5 font-medium">
-                        Rs. {v.price.toLocaleString()}
-                      </span>
-                    </button>
-                  );
-                })}
+            {/* Pack Size / Weight & Type Selection (No prices on buttons) */}
+            {product.category === "butter" ? (
+              <div className="space-y-4">
+                {/* Weight selector */}
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
+                    Select Weight:
+                  </label>
+                  <div className="grid grid-cols-2 gap-3">
+                    {(["1kg", "10kg"] as const).map((w) => {
+                      const isSelected = w === "10kg"
+                        ? selectedVariant.label.toLowerCase().includes("10kg")
+                        : selectedVariant.label.toLowerCase().includes("1kg") && !selectedVariant.label.toLowerCase().includes("10kg");
+                      return (
+                        <button
+                          key={w}
+                          type="button"
+                          onClick={() => {
+                            const isSalted = selectedVariant.label.toLowerCase().includes("salted") && !selectedVariant.label.toLowerCase().includes("unsalted");
+                            const matched = product.variants.find((v) => {
+                              const l = v.label.toLowerCase();
+                              const matchesW = w === "10kg" ? l.includes("10kg") : l.includes("1kg") && !l.includes("10kg");
+                              const matchesT = !isSalted ? l.includes("unsalted") : l.includes("salted") && !l.includes("unsalted");
+                              return matchesW && matchesT;
+                            });
+                            if (matched) setSelectedVariant(matched);
+                          }}
+                          className={`py-3 px-4 rounded-xl border text-center font-bold text-sm transition-all cursor-pointer ${
+                            isSelected
+                              ? "border-amber-600 bg-amber-600 text-white shadow-md shadow-amber-600/20"
+                              : "border-amber-200 bg-white hover:bg-amber-50 text-gray-800"
+                          }`}
+                        >
+                          {w}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Type selector */}
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
+                    Select Type:
+                  </label>
+                  <div className="grid grid-cols-2 gap-3">
+                    {(["Unsalted", "Salted"] as const).map((t) => {
+                      const isSelected = t === "Unsalted"
+                        ? selectedVariant.label.toLowerCase().includes("unsalted")
+                        : selectedVariant.label.toLowerCase().includes("salted") && !selectedVariant.label.toLowerCase().includes("unsalted");
+                      return (
+                        <button
+                          key={t}
+                          type="button"
+                          onClick={() => {
+                            const is10kg = selectedVariant.label.toLowerCase().includes("10kg");
+                            const matched = product.variants.find((v) => {
+                              const l = v.label.toLowerCase();
+                              const matchesW = is10kg ? l.includes("10kg") : l.includes("1kg") && !l.includes("10kg");
+                              const matchesT = t === "Unsalted" ? l.includes("unsalted") : l.includes("salted") && !l.includes("unsalted");
+                              return matchesW && matchesT;
+                            });
+                            if (matched) setSelectedVariant(matched);
+                          }}
+                          className={`py-3 px-4 rounded-xl border text-center font-bold text-sm transition-all cursor-pointer ${
+                            isSelected
+                              ? "border-amber-600 bg-amber-600 text-white shadow-md shadow-amber-600/20"
+                              : "border-amber-200 bg-white hover:bg-amber-50 text-gray-800"
+                          }`}
+                        >
+                          {t}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
-            </div>
+            ) : (
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
+                  Select Pack Weight:
+                </label>
+                <div className={`grid ${product.variants.length === 1 ? "grid-cols-1" : "grid-cols-2"} gap-3`}>
+                  {product.variants.map((v) => {
+                    const isSelected = selectedVariant.id === v.id;
+                    return (
+                      <button
+                        key={v.id}
+                        type="button"
+                        onClick={() => setSelectedVariant(v)}
+                        className={`py-3 px-4 rounded-xl border text-center font-bold text-sm transition-all cursor-pointer ${
+                          isSelected
+                            ? "border-amber-600 bg-amber-600 text-white shadow-md shadow-amber-600/20"
+                            : "border-amber-200 bg-white hover:bg-amber-50 text-gray-800"
+                        }`}
+                      >
+                        {v.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
 
             {/* Counter for quantity and adjacent "Add to Cart" button */}
             <div className="flex items-center gap-3 pt-2">
@@ -312,18 +387,18 @@ export default function ProductDetailPage({ params }: PageProps) {
                 </button>
               </div>
 
-              {/* Adjacent Add to Cart Button */}
+              {/* Adjacent Add to Cart Button (No price) */}
               <button
                 type="button"
                 onClick={handleAddToCart}
                 className="flex-1 h-12 rounded-full bg-gray-200 hover:bg-black text-gray-900 hover:text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 shadow-xs hover:shadow-md transition-all duration-200 cursor-pointer active:scale-98"
               >
                 <ShoppingCart className="w-4 h-4" />
-                <span>Add to Cart {quantity > 0 ? `(Rs. ${(selectedVariant.price * quantity).toLocaleString()})` : `(Rs. ${selectedVariant.price.toLocaleString()})`}</span>
+                <span>Add to Cart</span>
               </button>
             </div>
 
-            {/* ================= SECTION B: Under cart button: Trust badges & shipping details ================= */}
+            {/* ================= SECTION B: Under cart button: Trust badges ================= */}
             {/* Trust Badges */}
             <div className="grid grid-cols-2 gap-3 pt-4 border-t border-amber-100">
               <div className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50/70 border border-amber-200/50">
@@ -342,20 +417,6 @@ export default function ProductDetailPage({ params }: PageProps) {
                 <Clock className="w-4 h-4 text-purple-600 shrink-0" />
                 <span className="text-xs font-bold text-amber-950">Farm Fresh Churn</span>
               </div>
-            </div>
-
-            {/* Shipping Details */}
-            <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-amber-200/70 space-y-2 text-xs text-gray-700">
-              <div className="flex items-center gap-2 font-bold text-[#29150B]">
-                <Truck className="w-4 h-4 text-amber-700" />
-                <span>Delivery Information:</span>
-              </div>
-              <ul className="space-y-1.5 pl-6 list-disc text-gray-600">
-                <li>Carefully packaged in food-grade containers to ensure quality.</li>
-                <li>Orders before 4 PM delivered next morning between 7 AM – 11 AM.</li>
-                <li><strong>FREE Delivery</strong> on orders over Rs. 5,000 across city.</li>
-                <li>Instant WhatsApp confirmation and live dispatch rider tracking.</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -758,7 +819,7 @@ export default function ProductDetailPage({ params }: PageProps) {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {recommendedProducts.map((recProd) => (
               <ProductCard key={recProd.id} product={recProd} />
             ))}

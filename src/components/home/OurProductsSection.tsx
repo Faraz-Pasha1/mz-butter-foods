@@ -18,7 +18,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Butter",
     category: "butter",
-    image: "/images/Butter salted 2.jpeg",
+    image: "/images/Butter salted 2.webp",
     badge: "",
     description: "",
     link: "/products?category=butter",
@@ -26,7 +26,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Cream",
     category: "cream",
-    image: "/images/arwa cream.jpg",
+    image: "/images/arwa whipping cream.webp",
     badge: "",
     description: "",
     link: "/products?category=cream",
@@ -34,7 +34,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Ghee",
     category: "ghee",
-    image: "/images/Desi Ghee.jpeg",
+    image: "/images/Desi Ghee.webp",
     badge: "",
     description: "",
     link: "/products?category=ghee",
@@ -63,9 +63,9 @@ export const OurProductsSection: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl font-black text-[#29150B] tracking-tight">
               Our Core Product Categories
             </h2>
-            <p className="text-sm sm:text-base text-gray-600 mt-2 max-w-xl">
+            {/* <p className="text-sm sm:text-base text-gray-600 mt-2 max-w-xl">
               Handcrafted in small batches from whole, pasture-fed buffalo and cow milk.
-            </p>
+            </p> */}
           </div>
 
           {/* e. View all link (direct to products page) */}
@@ -119,10 +119,10 @@ export const OurProductsSection: React.FC = () => {
                   )}
                 </div>
 
-                <div className="mt-2.5 sm:mt-4 pt-2 sm:pt-3 border-t border-amber-50 flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold text-amber-700 group-hover:text-amber-800">
-                  <span>Explore {cat.title}</span>
+                {/* <div className="mt-2.5 sm:mt-4 pt-2 sm:pt-3 border-t border-amber-50 flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold text-amber-700 group-hover:text-amber-800">
+                  <span>Explore</span>
                   <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
+                </div> */}
               </div>
             </Link>
           ))}
