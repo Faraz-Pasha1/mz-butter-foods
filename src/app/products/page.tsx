@@ -73,9 +73,9 @@ function ProductsContent() {
           <h1 className="text-3xl sm:text-5xl font-black text-[#29150B] tracking-tight">
             Our Complete Product Collection
           </h1>
-          <p className="text-sm sm:text-base text-gray-600 mt-3 max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="text-sm sm:text-base text-gray-600 mt-3 max-w-2xl mx-auto leading-relaxed">
             Every product is hand-crafted from 100% pure milk. Available in multiple pack sizes with direct delivery.
-          </p>
+          </p> */}
         </div>
 
         {/* Filter & Category Menu Bar */}

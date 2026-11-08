@@ -250,14 +250,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {/* Quantity Controls and Add to Cart Button */}
           <div className="flex items-center gap-1 sm:gap-2">
             {/* Left Small Round Button: Decrease */}
-            <button
+            {/* <button
               type="button"
               onClick={handleDecrease}
               aria-label="Decrease quantity"
               className="w-7 h-7 sm:w-9 sm:h-9 rounded-full shrink-0 border border-gray-300 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold flex items-center justify-center transition-colors cursor-pointer shadow-xs active:scale-95"
             >
               <Minus className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-            </button>
+            </button> */}
 
             {/* Middle: Add to Cart Button with Quantity indicator */}
             <button
@@ -267,20 +267,20 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             >
               <ShoppingCart className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
               <span className="truncate">Add to Cart</span>
-              <span className="bg-black/10 group-hover/btn:bg-white/20 text-inherit px-1 sm:px-1.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-mono shrink-0">
+              {/* <span className="bg-black/10 group-hover/btn:bg-white/20 text-inherit px-1 sm:px-1.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-mono shrink-0">
                 {quantity}
-              </span>
+              </span> */}
             </button>
 
             {/* Right Small Round Button: Increase */}
-            <button
+            {/* <button
               type="button"
               onClick={handleIncrease}
               aria-label="Increase quantity"
               className="w-7 h-7 sm:w-9 sm:h-9 rounded-full shrink-0 border border-gray-300 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold flex items-center justify-center transition-colors cursor-pointer shadow-xs active:scale-95"
             >
               <Plus className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

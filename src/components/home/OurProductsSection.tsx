@@ -26,7 +26,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Cream",
     category: "cream",
-    image: "/images/arwa whipping cream.webp",
+    image: "/images/arwa cream 2.jpg",
     badge: "",
     description: "",
     link: "/products?category=cream",
@@ -34,7 +34,7 @@ const categories: CategoryShowcase[] = [
   {
     title: "Ghee",
     category: "ghee",
-    image: "/images/Desi Ghee.webp",
+    image: "/images/Desi Ghee 2.jpg",
     badge: "",
     description: "",
     link: "/products?category=ghee",
@@ -58,7 +58,7 @@ export const OurProductsSection: React.FC = () => {
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 uppercase tracking-widest bg-amber-100/70 px-3 py-1 rounded-full mb-3">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Dairy Collections</span>
+              <span>Our Collections</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-[#29150B] tracking-tight">
               Our Core Product Categories

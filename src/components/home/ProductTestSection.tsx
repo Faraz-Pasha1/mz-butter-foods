@@ -10,7 +10,7 @@ export const ProductTestSection: React.FC = () => {
       title: "Perfect Whipping & Peak Texture",
       desc: "Whip up smooth, stable peaks effortlessly to give your desserts a professional, bakery-style finish every time.",
       icon: <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />,
-      image: "/images/Cream1.webp",
+      image: "/images/cream1.webp",
       alt: "Arwa Whipping Cream for perfect bakery results",
     },
     {

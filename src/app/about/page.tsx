@@ -44,7 +44,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-sm sm:text-lg text-amber-100/80 max-w-2xl mx-auto leading-relaxed">
-            Reviving the authentic taste, golden color, and heavenly aroma of pure, unadulterated farm dairy.
+            
           </p>
         </div>
       </section>
@@ -95,10 +95,10 @@ export default function AboutPage() {
         {/* Our Mission */}
         <div className="bg-white rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-md space-y-4">
           <h2 className="text-3xl sm:text-4xl font-black text-[#29150B] font-serif tracking-tight">
-            Our Mission
+            Our Commitment to Quality & Food Safety
           </h2>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-normal">
-            Our mission is to lead Pakistan&apos;s clean food revolution by providing authentic, unadulterated dairy products directly from local pasture farms to families. We exist to protect consumers from deceptive industrial processing, hydrogenated fats, and synthetic additives.
+            Quality and food safety are at the heart of our operations. We follow controlled processing practices, maintain hygienic production conditions and conduct routine quality checks to ensure product consistency and safety. From processing to final packaging, we focus on maintaining cleanliness, proper handling and quality standards.
           </p>
         </div>
 
@@ -128,8 +128,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-2xl border border-amber-100 shadow-xs text-center flex flex-col items-center">
               <Award className="w-10 h-10 text-amber-600 mb-3" />
-              <h4 className="font-extrabold text-sm text-[#29150B]">100% Purity Certified</h4>
-              <p className="text-xs text-gray-500 mt-1">Free from palm oil, starch, and dyes</p>
+              <h4 className="font-extrabold text-sm text-[#29150B]">Food Safety Certified</h4>
+              <p className="text-xs text-gray-500 mt-1">Maintain GMP according to Standards</p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-amber-100 shadow-xs text-center flex flex-col items-center">
               <Leaf className="w-10 h-10 text-emerald-600 mb-3" />

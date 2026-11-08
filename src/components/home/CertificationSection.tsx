@@ -32,11 +32,11 @@ export const CertificationSection: React.FC = () => {
         </div>
 
         {/* Certificate Images in Square Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-lg mx-auto">
           {certificates.map((cert) => (
             <div
               key={cert.id}
-              className="relative aspect-square bg-white rounded-3xl border border-amber-200/80 shadow-md hover:shadow-lg transition-all duration-300 p-6 flex items-center justify-center overflow-hidden"
+              className="relative aspect-square bg-white rounded-3xl border border-amber-200/80 shadow-md hover:shadow-lg transition-all duration-300 p-4 flex items-center justify-center overflow-hidden"
             >
               <div className="relative w-full h-full">
                 <Image

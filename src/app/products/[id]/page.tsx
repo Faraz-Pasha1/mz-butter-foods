@@ -400,7 +400,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
             {/* ================= SECTION B: Under cart button: Trust badges ================= */}
             {/* Trust Badges */}
-            <div className="grid grid-cols-2 gap-3 pt-4 border-t border-amber-100">
+            {/* <div className="grid grid-cols-2 gap-3 pt-4 border-t border-amber-100">
               <div className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50/70 border border-amber-200/50">
                 <Award className="w-4 h-4 text-amber-600 shrink-0" />
                 <span className="text-xs font-bold text-amber-950">100% Pure Milkfat</span>
@@ -417,7 +417,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 <Clock className="w-4 h-4 text-purple-600 shrink-0" />
                 <span className="text-xs font-bold text-amber-950">Farm Fresh Churn</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -559,9 +559,9 @@ export default function ProductDetailPage({ params }: PageProps) {
                     unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <span className="absolute bottom-4 left-4 bg-amber-500 text-black text-xs font-black px-3 py-1 rounded-full">
+                  {/* <span className="absolute bottom-4 left-4 bg-amber-500 text-black text-xs font-black px-3 py-1 rounded-full">
                     Artisan Selected Batch
-                  </span>
+                  </span> */}
                 </div>
               </div>
 
@@ -764,7 +764,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 Purity Standards
               </span>
               <h3 className="text-2xl font-black text-[#29150B] mt-1">
-                The Mz Dairy Food Safety Promise
+                Our Food Safety Promise
               </h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

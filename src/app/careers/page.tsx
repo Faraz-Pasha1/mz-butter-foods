@@ -86,17 +86,17 @@ export default function CareersPage() {
 
         {/* Hero Section */}
         <div className="text-center max-w-2xl mx-auto mb-10 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest">
             <Sparkles className="w-3.5 h-3.5 text-amber-700" />
             <span>Join Our Artisanal Team</span>
-          </div>
+          </div> */}
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#29150B] tracking-tight leading-tight">
             Work With Mz Butter &amp; Foods
           </h1>
 
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-xl mx-auto">
-            We are reviving Pakistan&apos;s heritage of unadulterated, 100% pure dairy. Fill in your details and submit your resume below to connect with our HR team.
+            Submit your resume below to connect with our HR team.
           </p>
         </div>
 
@@ -111,9 +111,9 @@ export default function CareersPage() {
               <h2 className="text-2xl sm:text-3xl font-black text-[#29150B]">
                 Submit Your Application
               </h2>
-              <p className="text-xs sm:text-sm text-gray-600">
+              {/* <p className="text-xs sm:text-sm text-gray-600">
                 Please provide your contact details, select your area of interest, and attach your resume. Our HR department reviews all applications within 48 hours.
-              </p>
+              </p> */}
             </div>
 
             {isSubmitted ? (
@@ -338,7 +338,7 @@ export default function CareersPage() {
                             <span className="text-amber-700 underline">Click to upload</span> or drag and drop your resume
                           </p>
                           <p className="text-xs text-gray-500">
-                            Supported Formats: PDF, DOCX, DOC (Maximum file size: 10MB)
+                            Supported Formats: PDF, DOCX, DOC (Maximum file size: 5MB)
                           </p>
                         </div>
                       </>
@@ -378,7 +378,7 @@ export default function CareersPage() {
           <p className="text-xs text-gray-500">
             Have urgent questions regarding career applications at Mz Butter &amp; Foods?
           </p>
-          <a
+          {/* <a
             href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
               "Hello Mz Butter & Foods HR! I have a question regarding career applications."
             )}`}
@@ -388,7 +388,7 @@ export default function CareersPage() {
           >
             <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
             <span>Connect directly with our HR team on WhatsApp ({siteConfig.phone}) &rarr;</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
