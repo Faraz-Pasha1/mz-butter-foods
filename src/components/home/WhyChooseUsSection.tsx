@@ -80,7 +80,7 @@ export const WhyChooseUsSection: React.FC = () => {
               />
 
               {/* Base Dark Gradient Overlay for typography contrast */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/25 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/10 pointer-events-none" />
 
               {/* Hover Dark Scrim Overlay */}
               <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/55 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
