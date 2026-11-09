@@ -24,7 +24,7 @@ export const KeyCustomersSection: React.FC = () => {
         </div>
 
         {/* 20 Cards: Decreased Card Size with sleek multi-column grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-2 sm:gap-3 max-w-6xl mx-auto">
+        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-2 sm:gap-3 max-w-6xl mx-auto">
           {customers.map((cust) => (
             <div
               key={cust.id}

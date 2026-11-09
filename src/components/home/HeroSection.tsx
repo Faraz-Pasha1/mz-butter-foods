@@ -27,13 +27,13 @@ interface SlideData {
 const slides: SlideData[] = [
   // 1. Video Slide
   {
-  type: "video",
-  mediaUrl: "/images/HeroVideo.mp4",
-  posterUrl: "/images/productpagelandscapebutter.webp",
-  title: "",
-  buttonText: "Shop All",
-  buttonLink: "/products",
-},
+    type: "video",
+    mediaUrl: "/images/HeroVideo.mp4",
+    posterUrl: "/images/productpagelandscapebutter.webp",
+    title: "",
+    buttonText: "Shop All",
+    buttonLink: "/products",
+  },
 
   // 2. All Products
   {
@@ -111,7 +111,7 @@ export const HeroSection: React.FC = () => {
     if (!video) return;
 
     if (currentSlide === 0 && isPlaying) {
-      video.play().catch(() => {});
+      video.play().catch(() => { });
     } else {
       video.pause();
     }
@@ -146,7 +146,7 @@ export const HeroSection: React.FC = () => {
     if (video.paused) {
       video.play().then(() => {
         setIsPlaying(true);
-      }).catch(() => {});
+      }).catch(() => { });
     } else {
       video.pause();
       setIsPlaying(false);
@@ -165,7 +165,7 @@ export const HeroSection: React.FC = () => {
         md:h-[65vh] md:min-h-[400px] md:max-h-[600px]
 
         /* LAPTOP / DESKTOP - LANDSCAPE */
-        lg:h-[75vh] lg:min-h-[450px] lg:max-h-[750px]
+        lg:h-[82vh] lg:min-h-[450px] lg:max-h-[750px]
       "
     >
       {/* SLIDES CONTAINER */}
@@ -178,10 +178,9 @@ export const HeroSection: React.FC = () => {
             className={`
               absolute inset-0
               transition-opacity duration-1000 ease-in-out
-              ${
-                isActive
-                  ? "opacity-100 z-10"
-                  : "opacity-0 z-0 pointer-events-none"
+              ${isActive
+                ? "opacity-100 z-10"
+                : "opacity-0 z-0 pointer-events-none"
               }
             `}
           >
@@ -339,8 +338,8 @@ export const HeroSection: React.FC = () => {
                     px-8 py-3.5
                     rounded-full
                     bg-transparent
-                    border-2 border-black
-                    text-black font-black text-sm
+                    border-2 border-grey
+                    text-grey font-black text-sm
                     tracking-wide
                     transition-all duration-300
                     hover:bg-amber-500

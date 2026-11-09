@@ -13,8 +13,8 @@ export const products: Product[] = [
     fullDescription: "Our Pure Creamery Butter is crafted from fresh cow and buffalo milk cream, delivering a rich taste, smooth texture, and excellent performance for both home and professional kitchens. Carefully processed to maintain its natural dairy goodness, it is ideal for baking, cooking, pastries, croissants, and everyday spreading.",
     images: [
       "/images/Butter salted 2.webp",
-      "/images/Butter salted 3.webp",
-      "/images/Butter salted 3.webp"
+      "/images/butter2ndpic.jpg",
+      // "/images/Butter salted 3.webp"
     ],
     price: 2150,
     originalPrice: 2450,
@@ -73,8 +73,8 @@ export const products: Product[] = [
     fullDescription: "Our quality dairy butter is made from cow and buffalo milk cream, offering a smooth texture and delicious buttery flavour for everyday use. Carefully processed and hygienically packed, it is a versatile choice for cooking, spreading, sauces, and a variety of culinary applications in homes, restaurants, and commercial kitchens.",
     images: [
       "/images/Butter unsalted 1.webp",
-      "/images/Butter unsalted 1.webp",
-      "/images/Butter unsalted 1.webp"
+      "/images/productpagelandscapebutter.webp",
+      // "/images/Butter unsalted 1.webp"
     ],
     price: 1850,
     originalPrice: 2150,
@@ -126,9 +126,9 @@ export const products: Product[] = [
     shortDescription: "Rich and creamy whipping cream, perfect for cakes, pastries, desserts, and decorative toppings. Ideal for bakeries, cafés, and home kitchens seeking smooth texture and delicious flavour. ",
     fullDescription: "Arwa Whipping Cream is a homogenized, non-dairy whipping cream designed to deliver a smooth texture, consistent performance, and excellent whipping results. Its creamy consistency makes it ideal for professional cake decoration, pastries, desserts, and bakery applications",
     images: [
-      "/images/arwa cream.webp",
-      "/images/arwa whipping cream.webp",
-      "/images/arwa cream.webp"
+      "/images/arwa cream 2.jpg",
+      "/images/arwacream2ndpic.jpg",
+      // "/images/arwa cream.webp"
     ],
     price: 550,
     originalPrice: 650,
@@ -186,9 +186,9 @@ export const products: Product[] = [
     shortDescription: "Cooked slowly over gentle flame from pure butter until water evaporates and milk solids caramelize to golden perfection. Perfect for traditional cooking, frying, parathas, and everyday Pakistani cuisine.",
     fullDescription: "Our Traditional Desi Ghee is slowly prepared from quality butter to develop its rich aroma, authentic taste, and signature granular texture. Carefully clarified to deliver traditional goodness, it is perfect for cooking, frying, baking, parathas, and traditional sweets.",
     images: [
+      "/images/Desi Ghee 2.jpg",
       "/images/Desi Ghee.webp",
-      "/images/Desi Ghee.webp",
-      "/images/Desi Ghee.webp"
+      // "/images/Desi Ghee.webp"
     ],
     price: 2800,
     originalPrice: 3200,
@@ -244,8 +244,8 @@ export const products: Product[] = [
     fullDescription: "Our Back Chocolate Chips deliver a rich cocoa flavour and smooth chocolate taste, making them perfect for baking and confectionery. An ideal choice for cookies, brownies, cakes, muffins, desserts, and professional bakery applications.",
     images: [
       "/images/Chocolate chip.webp",
-      "/images/Chocolate chip.webp",
-      "/images/Chocolate chip.webp"
+      "/images/chocolatechip2npic.jpg",
+      // "/images/Chocolate chip.webp"
     ],
     price: 800,
     originalPrice: 950,
@@ -302,8 +302,8 @@ export const products: Product[] = [
     fullDescription: "Crafted for delightful sweetness, our White Chocolate Chips combine a smooth, creamy taste with the richness of skimmed milk. Perfect for cookies, cakes, brownies, pastries, and desserts, they bring a delicious milky touch to every baking creation.",
     images: [
       "/images/White chip.webp",
-      "/images/White chip.webp",
-      "/images/White chip.webp"
+      "/images/whitechip2ndpic.jpg",
+      // "/images/White chip.webp"
     ],
     price: 900,
     originalPrice: 1050,

@@ -35,7 +35,7 @@ export const CertificationSection: React.FC = () => {
         </div>
 
         {/* Two Certification Cards in One Line */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8 max-w-3xl mx-auto">
 
           {certificates.map((cert) => (
             <div

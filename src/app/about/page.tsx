@@ -23,7 +23,7 @@ export default function AboutPage() {
       <section className="relative py-20 sm:py-28 bg-[#1C0E07] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src=""
+            src="/images/aboutbanner.jpg"
             alt="Mz Butter & foods farm pasture"
             fill
             priority
@@ -44,7 +44,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-sm sm:text-lg text-amber-100/80 max-w-2xl mx-auto leading-relaxed">
-            
+
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function AboutPage() {
       {/* 3. Full Width Image Full Height Screen */}
       <section className="relative w-full h-screen min-h-[550px] max-h-[850px] bg-black overflow-hidden my-6">
         <Image
-          src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1800&q=80"
+          src="/images/aboutpic.webp"
           alt="Mz Butter & foods dairy craftsmanship"
           fill
           className="object-cover scale-105"
