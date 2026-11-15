@@ -226,8 +226,8 @@ export const products: Product[] = [
         answer: "The distinctive danedar texture develops during the natural cooling and crystallization of ghee, giving it its traditional grainy consistency and authentic appearance."
       }
     ],
-    landscapeBanner: "",
-    portraitFeature: "",
+    landscapeBanner: "/images/Desi Ghee.webp",
+    portraitFeature: "/images/Desi Ghee 2.jpg",
     inStock: true,
     featured: true,
   },
@@ -238,7 +238,7 @@ export const products: Product[] = [
     slug: "black-chocolate-chip",
     name: "Black Chocolate Chip",
     category: "chocolate",
-    categoryLabel: "Chocolate & Chip",
+    categoryLabel: "Chocolate Chip",
     tagline: "Rich and indulgent Black Chocolate Chips, crafted with quality cocoa for a deep chocolate flavour and smooth texture.",
     shortDescription: "Rich and indulgent Black Chocolate Chips, crafted with quality cocoa for a deep chocolate flavour and smooth texture.",
     fullDescription: "Our Back Chocolate Chips deliver a rich cocoa flavour and smooth chocolate taste, making them perfect for baking and confectionery. An ideal choice for cookies, brownies, cakes, muffins, desserts, and professional bakery applications.",
@@ -284,8 +284,8 @@ export const products: Product[] = [
         answer: "Store Dark Chocolate Chips at below 25°C in a cool, dry place, away from direct sunlight and moisture. Keep the packaging tightly sealed after opening to maintain freshness and quality."
       }
     ],
-    landscapeBanner: "",
-    portraitFeature: "",
+    landscapeBanner: "/images/Chocolate chip.webp",
+    portraitFeature: "/images/chocolatechip2npic.jpg",
     inStock: true,
     featured: true,
   },
@@ -296,7 +296,7 @@ export const products: Product[] = [
     slug: "white-chocolate-chip",
     name: "White Chocolate Chip",
     category: "chocolate",
-    categoryLabel: "Chocolate & Chip",
+    categoryLabel: "Chocolate Chip",
     tagline: "Add a touch of creamy sweetness and elegance to every creation.",
     shortDescription: "Enjoy the smooth, creamy sweetness of White Chocolate Chips, perfect for adding a rich milky flavour to cookies, cakes, brownies, muffins, and desserts.",
     fullDescription: "Crafted for delightful sweetness, our White Chocolate Chips combine a smooth, creamy taste with the richness of skimmed milk. Perfect for cookies, cakes, brownies, pastries, and desserts, they bring a delicious milky touch to every baking creation.",
@@ -342,8 +342,8 @@ export const products: Product[] = [
         answer: "Store White Chocolate Chips at below 25°C in a cool, dry place, away from direct sunlight and moisture. Keep the packaging tightly sealed after opening to maintain freshness and quality.",
       }
     ],
-    landscapeBanner: "",
-    portraitFeature: "",
+    landscapeBanner: "/images/White chip.webp",
+    portraitFeature: "/images/whitechip2ndpic.jpg",
     inStock: true,
     featured: true,
   }

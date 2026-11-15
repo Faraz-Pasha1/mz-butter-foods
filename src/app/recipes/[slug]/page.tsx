@@ -120,10 +120,10 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-center justify-between text-white gap-3">
-            <span className="text-xs uppercase tracking-widest font-black text-amber-300">
+            {/* <span className="text-xs uppercase tracking-widest font-black text-amber-300">
               Authentic Dairy Kitchen Creation
-            </span>
-            <a
+            </span> */}
+            {/* <a
               href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -131,7 +131,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
             >
               <MessageCircle className="w-4 h-4" />
               <span>Order Ingredients on WhatsApp ({siteConfig.phone})</span>
-            </a>
+            </a> */}
           </div>
         </div>
 

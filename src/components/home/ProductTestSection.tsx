@@ -61,9 +61,9 @@ export const ProductTestSection: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-white">
-                <span className="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest text-amber-300 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-xs">
+                {/* <span className="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest text-amber-300 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-xs">
                   Pure Churned Goodness
-                </span>
+                </span> */}
                 <p className="text-sm sm:text-lg font-black mt-2 leading-tight drop-shadow-md">
                   Crafted for Pastry Chefs &amp; Quality Kitchens
                 </p>

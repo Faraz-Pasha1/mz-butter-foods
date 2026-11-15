@@ -48,20 +48,20 @@ export default function RecipesPage() {
             Home
           </Link>
           <span>/</span>
-          <span className="text-gray-900 font-semibold">Artisanal Dairy Recipes</span>
+          <span className="text-gray-900 font-semibold">Dairy Recipes</span>
         </nav>
 
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest mb-3">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest mb-3">
             <ChefHat className="w-3.5 h-3.5 text-amber-700" />
             <span>Farm to Kitchen Culinary Recipes</span>
-          </div>
+          </div> */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#29150B] tracking-tight leading-tight">
             Handcrafted Dairy Recipes
           </h1>
           <p className="text-base sm:text-lg text-gray-600 mt-3 leading-relaxed">
-            Discover culinary magic made possible with 100% pure churned butter, unhomogenized velvet cream, and fragrant danedar desi ghee.
+            Discover culinary magic made possible with 100% pure churned butter, homogenized velvet cream, and fragrant danedar desi ghee.
           </p>
 
           {/* Controls: Recipe Dropdown (Only Recipe Name Shown) & Search Bar */}
@@ -200,7 +200,7 @@ export default function RecipesPage() {
               Order Your Fresh Recipe Bundle Direct via WhatsApp
             </h3>
             <p className="text-sm text-amber-100/80 leading-relaxed">
-              Message us directly at <strong>{siteConfig.phone}</strong> and we will pack your custom pure butter, cream, and ghee order with guaranteed cold delivery!
+              Message us directly at <strong>{siteConfig.phone}</strong> to place your order. Enjoy our premium butter, cream, and desi ghee, freshly packed and delivered right to your doorstep!
             </p>
           </div>
 

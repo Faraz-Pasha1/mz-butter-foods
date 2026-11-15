@@ -24,7 +24,7 @@ const categories: CategoryShowcase[] = [
     link: "/products?category=butter",
   },
   {
-    title: "Cream",
+    title: "Whipping Cream",
     category: "cream",
     image: "/images/arwa cream 2.jpg",
     badge: "",
@@ -32,15 +32,15 @@ const categories: CategoryShowcase[] = [
     link: "/products?category=cream",
   },
   {
-    title: "Ghee",
-    category: "ghee",
+    title: "Desi Ghee",
+    category: "desi ghee",
     image: "/images/Desi Ghee 2.jpg",
     badge: "",
     description: "",
     link: "/products?category=ghee",
   },
   {
-    title: "Chocolate & Chips",
+    title: "Chocolate Chips",
     category: "chocolate",
     image: "/images/Chocolate chip.webp",
     badge: "",

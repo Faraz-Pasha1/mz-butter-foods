@@ -375,9 +375,9 @@ export default function CareersPage() {
 
         {/* Direct HR Inquiries Callout */}
         <div className="mt-12 text-center max-w-xl mx-auto space-y-2">
-          <p className="text-xs text-gray-500">
+          {/* <p className="text-xs text-gray-500">
             Have urgent questions regarding career applications at Mz Butter &amp; Foods?
-          </p>
+          </p> */}
           {/* <a
             href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
               "Hello Mz Butter & Foods HR! I have a question regarding career applications."

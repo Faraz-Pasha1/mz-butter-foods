@@ -24,9 +24,9 @@ function ProductsContent() {
   const categories: { label: string; value: string }[] = [
     { label: "All Dairy & Sweets", value: "all" },
     { label: "Butter", value: "butter" },
-    { label: "Fresh Cream", value: "cream" },
+    { label: "Cream", value: "cream" },
     { label: "Desi Ghee", value: "ghee" },
-    { label: "Chocolate & Chip", value: "chocolate" },
+    { label: "Chocolate Chips", value: "chocolate" },
   ];
 
   // Filter & Sort
@@ -90,11 +90,10 @@ function ProductsContent() {
                     key={cat.value}
                     type="button"
                     onClick={() => setSelectedCategory(cat.value)}
-                    className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                      isSelected
-                        ? "bg-amber-600 text-white shadow-md shadow-amber-600/20"
-                        : "bg-amber-50/70 text-amber-900/80 hover:bg-amber-100"
-                    }`}
+                    className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${isSelected
+                      ? "bg-amber-600 text-white shadow-md shadow-amber-600/20"
+                      : "bg-amber-50/70 text-amber-900/80 hover:bg-amber-100"
+                      }`}
                   >
                     {cat.label}
                   </button>
