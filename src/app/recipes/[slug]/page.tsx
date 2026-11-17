@@ -189,7 +189,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
                 Ingredients
               </h2>
               <p className="text-xs text-gray-500 mb-6">
-                All measurements for {recipe.servings}. Best prepared with chilled, farm-fresh dairy.
+                All measurements for {recipe.servings}.
               </p>
 
               <ul className="space-y-3.5">
@@ -216,7 +216,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
                         {recipe.nutrition.calories}
                       </span>
                     </div>
-                    <div className="bg-white p-2.5 rounded-xl border border-amber-200/60">
+                    {/* <div className="bg-white p-2.5 rounded-xl border border-amber-200/60">
                       <span className="block text-xs text-gray-400">Dairy Fat</span>
                       <span className="font-extrabold text-sm text-amber-700">
                         {recipe.nutrition.butterfat}
@@ -227,7 +227,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
                       <span className="font-extrabold text-sm text-[#29150B]">
                         {recipe.nutrition.protein}
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               )}
@@ -266,7 +266,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
             </div>
 
             {/* Chef Secrets Box */}
-            <div className="bg-amber-50/80 p-6 sm:p-8 rounded-3xl border border-amber-200 space-y-3">
+            {/* <div className="bg-amber-50/80 p-6 sm:p-8 rounded-3xl border border-amber-200 space-y-3">
               <div className="flex items-center gap-2 text-amber-800">
                 <Lightbulb className="w-5 h-5 text-amber-600 shrink-0" />
                 <h3 className="font-black text-base uppercase tracking-wider">
@@ -281,7 +281,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* WhatsApp Quick Order Callout */}
             <div className="p-6 rounded-3xl bg-[#1C0E07] text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-amber-500/20">

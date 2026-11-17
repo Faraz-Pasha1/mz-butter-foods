@@ -20,8 +20,8 @@ export const recipes: Recipe[] = [
     description: "Classic butter croissants are renowned for their golden, flaky exterior and delicate, airy interior. Made using carefully layered dough and quality butter, these French pastries are an elegant choice for breakfast, brunch, or an afternoon treat.",
     ingredients: [
       "500 g all-purpose flour",
-      "250 g cold Mz Pure Creamery Butter (for lamination)",
-      "60 g softened Mz Pure Creamery Butter",
+      "250 g cold Butter (for lamination)",
+      "60 g softened Butter",
       "60 g sugar",
       "10 g salt",
       "10 g instant yeast",
@@ -91,7 +91,7 @@ export const recipes: Recipe[] = [
     description: "Butter shortbread biscuits are a classic bakery product known for their delicate crumb, crisp texture, and balanced sweetness. Their simple ingredient profile allows the flavour of butter to take centre stage, making them ideal for tea service, gift boxes, and everyday snacking.",
     ingredients: [
       "200 g all-purpose flour",
-      "125 g softened Mz Pure Creamery Butter",
+      "125 g softened Butter",
       "80 g powdered sugar",
       "1 egg yolk",
       "1 teaspoon vanilla essence",
@@ -101,7 +101,7 @@ export const recipes: Recipe[] = [
       {
         step: 1,
         title: "Cream Butter and Sugar",
-        detail: "Beat the softened Mz Butter and powdered sugar until completely smooth and creamy."
+        detail: "Beat the softened Butter and powdered sugar until completely smooth and creamy."
       },
       {
         step: 2,
@@ -165,8 +165,8 @@ export const recipes: Recipe[] = [
     description: "Creamy Alfredo pasta is a popular Italian-inspired dish featuring tender pasta coated in a rich, velvety sauce. Butter, cream, garlic, and Parmesan cheese combine to create a comforting meal suitable for lunch, dinner, or a restaurant-style menu.",
     ingredients: [
       "300 g fettuccine or pasta of choice",
-      "40 g Mz Pure Creamery Butter",
-      "200 ml Mz Pure Rich Velvet Fresh Cream",
+      "40 g Butter",
+      "200 ml Arwa Whipping Cream",
       "3 garlic cloves, finely chopped",
       "60 g grated Parmesan cheese",
       "Salt to taste",
@@ -183,12 +183,12 @@ export const recipes: Recipe[] = [
       {
         step: 2,
         title: "Sauté the Garlic in Butter",
-        detail: "Melt the Mz Butter in a pan over medium-low heat. Add the minced garlic and cook for approximately one minute without browning it."
+        detail: "Melt the Butter in a pan over medium-low heat. Add the minced garlic and cook for approximately one minute without browning it."
       },
       {
         step: 3,
-        title: "Simmer the Fresh Cream",
-        detail: "Pour in the Mz Velvet Fresh Cream and warm gently for 2–3 minutes, stirring continuously."
+        title: "Simmer the Cream",
+        detail: "Pour in the Cream and warm gently for 2–3 minutes, stirring continuously."
       },
       {
         step: 4,
@@ -243,11 +243,11 @@ export const recipes: Recipe[] = [
       "½ teaspoon turmeric powder",
       "1½ teaspoons garam masala (divided)",
       "1 tablespoon oil (for chicken sear)",
-      "50 g Mz Pure Creamery Butter",
+      "50 g Butter",
       "400 g chopped tomatoes or fresh tomato purée",
       "1 medium onion, finely chopped",
       "1 teaspoon coriander powder",
-      "100 ml Mz Pure Rich Velvet Fresh Cream",
+      "100 ml Cream",
       "1 teaspoon dried fenugreek leaves (kasuri methi)",
       "Salt to taste",
       "Fresh coriander leaves for garnish"
@@ -266,7 +266,7 @@ export const recipes: Recipe[] = [
       {
         step: 3,
         title: "Sauté Aromatics in Butter",
-        detail: "Melt Mz Butter in a separate pan. Add the chopped onion and cook until softened. Add the remaining ginger-garlic paste and cook briefly until fragrant."
+        detail: "Melt Butter in a separate pan. Add the chopped onion and cook until softened. Add the remaining ginger-garlic paste and cook briefly until fragrant."
       },
       {
         step: 4,
@@ -286,7 +286,7 @@ export const recipes: Recipe[] = [
       {
         step: 7,
         title: "Add Velvet Cream and Fenugreek",
-        detail: "Stir in Mz Velvet Fresh Cream, ½ tsp garam masala, and crushed dried fenugreek leaves (kasuri methi). Simmer gently for 2 minutes."
+        detail: "Stir in Cream, ½ tsp garam masala, and crushed dried fenugreek leaves (kasuri methi). Simmer gently for 2 minutes."
       },
       {
         step: 8,
@@ -296,7 +296,7 @@ export const recipes: Recipe[] = [
     ],
     chefTips: [
       "Crushing kasuri methi between your palms before adding unlocks its distinctive restaurant aroma.",
-      "A dollop of cold Mz Butter stirred in just before serving creates a glossy lacquer finish.",
+      "A dollop of cold Butter stirred in just before serving creates a glossy lacquer finish.",
       "Pair with hot tandoori garlic naan or fragrant jeera rice."
     ],
     nutrition: {
@@ -325,12 +325,12 @@ export const recipes: Recipe[] = [
     description: "Creamy mushroom soup is a popular international favourite, valued for its earthy mushroom flavour, smooth texture, and comforting warmth. Butter enhances the savoury character of the mushrooms, while cream gives the soup its rich, velvety finish.",
     ingredients: [
       "400 g fresh mushrooms, sliced",
-      "40 g Mz Pure Creamery Butter",
+      "40 g Butter",
       "1 medium onion, finely chopped",
       "3 garlic cloves, minced",
       "2 tablespoons all-purpose flour",
       "750 ml vegetable or chicken stock",
-      "200 ml Mz Pure Rich Velvet Fresh Cream",
+      "200 ml whipping Cream",
       "½ teaspoon freshly cracked black pepper",
       "Salt to taste",
       "1 tablespoon chopped fresh parsley",
@@ -340,7 +340,7 @@ export const recipes: Recipe[] = [
       {
         step: 1,
         title: "Sauté Mushrooms in Butter",
-        detail: "Melt Mz Butter in a large saucepan over medium heat. Add the sliced mushrooms and cook for 6–8 minutes until softened and lightly browned."
+        detail: "Melt Butter in a large saucepan over medium heat. Add the sliced mushrooms and cook for 6–8 minutes until softened and lightly browned."
       },
       {
         step: 2,
@@ -369,8 +369,8 @@ export const recipes: Recipe[] = [
       },
       {
         step: 7,
-        title: "Finish with Fresh Cream",
-        detail: "Reduce the heat and stir in the Mz Velvet Fresh Cream. Season with salt and black pepper. Warm gently without boiling vigorously."
+        title: "Finish with Cream",
+        detail: "Reduce the heat and stir in the Cream. Season with salt and black pepper. Warm gently without boiling vigorously."
       },
       {
         step: 8,
