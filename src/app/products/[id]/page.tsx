@@ -573,10 +573,22 @@ export default function ProductDetailPage({ params }: PageProps) {
                   Why {product.name} Excels
                 </h3>
                 <p className="text-base sm:text-lg text-amber-100/90 leading-relaxed">
-                  Every gram of our product is monitored from the initial skimming temperature to the packaging line. We preserve natural microbial diversity and rich dairy aroma that mass industrial production strips away.
+                  {(() => {
+                    const productDescriptions: Record<string, string> = {
+                      "premium butter": "Experience the richness of premium-quality butter, crafted from carefully selected dairy cream for a smooth texture, rich aroma, and exceptional taste. Perfect for spreading, cooking, and baking, it brings a touch of indulgence to every meal.",
+                      "butter": "Designed for everyday enjoyment, our butter delivers a smooth consistency, delicious flavour, and versatile performance. From breakfast toast to homemade recipes, it brings satisfying dairy goodness to every meal.",
+                      "desi ghee": "Celebrate authentic culinary traditions with rich aroma, golden colour, and distinctive desi flavour. Our Desi Ghee adds a delicious touch to traditional sweets, aromatic curries, parathas, and everyday Pakistani cuisine.",
+                      "whipping cream": "Designed for beautiful dessert creations, our whipping cream delivers a smooth, fluffy texture and excellent whipping performance. Ideal for cake decoration, pastries, bakery products, and creative dessert applications.",
+                      "white chocolate chips": "Our White Chocolate Chips combine a creamy flavour with versatile baking applications. Their uniform size and sweet, smooth taste make them a delightful addition to cookies, muffins, brownies, desserts, and other bakery creations.",
+                      "black chocolate chips": "Our Black Chocolate Chips bring a rich cocoa flavour and delicious chocolate character to your favourite baked creations. Perfect for cookies, brownies, muffins, and desserts, they add an indulgent chocolate touch to homemade and bakery-style treats.",
+                    };
+
+                    const productKey = product.name.trim().toLowerCase();
+                    return productDescriptions[productKey] ?? product.shortDescription;
+                  })()}
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                     <h4 className="font-bold text-amber-300 text-sm">Natural Unrefined Aroma</h4>
                     <p className="text-xs text-amber-100/70 mt-1">No artificial chemical essences or butter fragrances added.</p>
@@ -585,7 +597,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                     <h4 className="font-bold text-amber-300 text-sm">Freshly Preserved</h4>
                     <p className="text-xs text-amber-100/70 mt-1">Carefully processed to maintain peak natural freshness.</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

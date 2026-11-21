@@ -18,22 +18,21 @@ export const CreamSection: React.FC = () => {
             </div> */}
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#29150B] tracking-tight leading-tight">
-              Mz Butter
+              Rich, Creamy Butter for Your Kitchen & Bakery
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed">
-              We are committed to delivering quality butter with rich taste, creamy texture and consistent product standards. Our focus is on maintaining quality at every stage, from raw material handling and processing to packaging and storage.
+              Crafted from pure dairy cream, MZ Butter brings a velvety texture and authentic taste to your daily breakfast, gourmet cooking, and professional baking. Strictly tested at every stage for purity and freshness.
             </p>
 
             {/* Feature Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
               {[
-                "Provides energy for daily activities.",
-                "Contains fat-soluble vitamins A, E and K.",
-                "Enhances the taste and texture of meals, baking and desserts.",
-                "Supports Brain Function",
-                "Helps Absorb Vitamins",
-                "Improves Food Taste",
+                "100% Pure Dairy Goodness.",
+                "Superior Melt & Baking Performance.",
+                "Natural Source of Vitamins A, D & E",
+                "Strict Hygiene & Quality Standards",
+                
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-amber-600/15 text-amber-700 flex items-center justify-center shrink-0">

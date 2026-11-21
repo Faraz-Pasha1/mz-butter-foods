@@ -16,7 +16,7 @@ export const KeyCustomersSection: React.FC = () => {
             <span>Trusted Culinary Partners</span>
           </div> */}
           <h2 className="text-3xl sm:text-4xl font-black text-[#29150B] tracking-tight">
-            Our Key Customers
+            Business Partner
           </h2>
           {/* <p className="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl mx-auto">
             From Michelin-caliber pastry chefs and artisanal French bakeries to beloved heritage sweet shops and luxury cafes.

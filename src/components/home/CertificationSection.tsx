@@ -30,7 +30,7 @@ export const CertificationSection: React.FC = () => {
         {/* Section Heading */}
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 font-serif tracking-tight">
-            Our Certifications
+            Certifications
           </h2>
         </div>
 

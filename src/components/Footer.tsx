@@ -147,7 +147,7 @@ export const Footer: React.FC = () => {
             {/* 4th Section: Socials, Contact #, Address #, Email address */}
             <div className="space-y-4">
               <h3 className="text-sm font-extrabold uppercase tracking-widest text-amber-400 mb-5 pb-1 border-b border-amber-800/40 inline-block">
-                Connect &amp; Contact
+                Follow &amp; Contact
               </h3>
 
               {/* Social links */}
